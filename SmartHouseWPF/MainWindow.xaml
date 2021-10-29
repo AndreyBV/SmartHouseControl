@@ -1,0 +1,1770 @@
+﻿<Window xmlns:mui="http://firstfloorsoftware.com/ModernUI"   xmlns:rh="http://schemas.rollinghours.com/wpf"      xmlns:gauge="http://mindfusion.eu/gauges/wpf" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartHouseWPF"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock" x:Class="SmartHouseWPF.MainWindow"
+        mc:Ignorable="d"
+        Title="Система упралвления - &quot;Умное здание&quot;" Height="841.05" Width="1177.5" MinWidth="650" MinHeight="450" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" >
+
+
+    <Grid>
+
+        <!--Основные вкладки-->
+        <TabControl x:Name="baseTabControl" SelectionChanged="baseTabControl_SelectionChanged">
+            <!--Вкладка управления домом-->
+            <TabItem x:Name="elementTIAppControl" Header="Управление стендом" Height="24" VerticalAlignment="Bottom" ToolTip="Вкладка, содержащая элементы сбора данных и управления стендом &quot;Умное здание&quot;">
+                <DockPanel >
+
+
+                    <ScrollViewer DockPanel.Dock="Right" x:Name="panel_options_fr" VerticalScrollBarVisibility="Auto" Panel.ZIndex="1" Background="White" Width="200" >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <GroupBox Grid.Row="0" BorderBrush="Black" Margin="3,0">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="Общее управление" />
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <GroupBox Header="Основное освещение"  Grid.Row="0" ToolTip="Управление всеми устройствами основного освещения">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition></RowDefinition>
+                                                <RowDefinition></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Margin="3,5" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                                                <Slider x:Name="sldAllL"  Width="130" ValueChanged="sldAllL_ValueChanged" SmallChange="1" Minimum="1" TickFrequency="10" Background="{x:Null}" BorderBrush="#00000000" Foreground="{x:Null}" />
+                                                <TextBlock x:Name="tbAllL" VerticalAlignment="Center" Padding="1,0,0,0">1</TextBlock>
+                                            </StackPanel>
+
+                                            <Button Uid="AL1" Margin="3,0,3,1" Grid.Row="1" Grid.Column="0" Background="#FFD3F3FD" Click="btnAllSensorControl_Click" Height="21" VerticalAlignment="Bottom">Включить</Button>
+                                            <Button Uid="AL0" Margin="3,0" Grid.Row="1" Grid.Column="1" Background="#FFFFD9D9"  Click="btnAllSensorControl_Click" >Выключить</Button>
+                                        </Grid>
+                                    </GroupBox>
+                                    <GroupBox Header="Плавное освещение"  Grid.Row="1" ToolTip="Управление всеми устройствами с плавным регулированием освещения">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition></RowDefinition>
+                                                <RowDefinition></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Margin="3,5" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                                                <Slider  x:Name="sldAllS"  Width="130" SmallChange="1" ValueChanged="sldAllL_ValueChanged" Minimum="1" TickFrequency="10" SelectionEnd="1" />
+                                                <TextBlock x:Name="tbAllS" VerticalAlignment="Center" Padding="1,0,0,0">1</TextBlock>
+                                            </StackPanel>
+
+                                            <Button Uid="AS1" Margin="3,0" Grid.Row="1" Grid.Column="0" Background="#FFD3F3FD"  Click="btnAllSensorControl_Click">Включить</Button>
+                                            <Button Uid="AS0" Margin="3,0" Grid.Row="1" Grid.Column="1" Background="#FFFFD9D9"  Click="btnAllSensorControl_Click">Выключить</Button>
+                                        </Grid>
+                                    </GroupBox>
+                                    <GroupBox Header="Фоновое освещение"  Grid.Row="2" ToolTip="Управление всеми устройствами фонового освещения">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition></RowDefinition>
+                                                <RowDefinition></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <xctk:ColorPicker Grid.Row="0" Grid.ColumnSpan="2" Margin="3,5" x:Name="cpAllSensor"  VerticalAlignment="Bottom"  SelectedColor="Black" ShowStandardColors="True" ShowRecentColors="True" ShowAvailableColors="False" ToolTip="Цвет для всего фонового освещения "/>
+                                            <Button Uid="AB1" Margin="3,0" Grid.Row="1" Grid.Column="0" Background="#FFD3F3FD"  Click="btnAllSensorControl_Click">Включить</Button>
+                                            <Button Uid="AB0" Margin="3,0" Grid.Row="1" Grid.Column="1" Background="#FFFFD9D9"  Click="btnAllSensorControl_Click">Выключить</Button>
+                                        </Grid>
+                                    </GroupBox>
+                                    <GroupBox Header="Электроотопление"  Grid.Row="3" ToolTip="Управление всеми устройствами электроотопления">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition></RowDefinition>
+                                                <RowDefinition></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Margin="3,5" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                                                <Slider x:Name="sldAllC" Width="125" Minimum="-10" SmallChange="1" ValueChanged="sldAllL_ValueChanged"></Slider>
+                                                <TextBlock x:Name="tbAllC" VerticalAlignment="Center" Padding="1,0,0,0">0</TextBlock>
+                                            </StackPanel>
+
+                                            <Button Uid="AHC1" Margin="3,0" Grid.Row="1" Grid.Column="0" Background="#FFD3F3FD"  Click="btnAllSensorControl_Click">Включить</Button>
+                                            <Button Uid="AHC0" Margin="3,0" Grid.Row="1" Grid.Column="1" Background="#FFFFD9D9"  Click="btnAllSensorControl_Click">Выключить</Button>
+                                        </Grid>
+                                    </GroupBox>
+
+
+                                    <!--<Button Grid.Row="0" Margin="3,3,0,3" Background="White" Uid="L" Click="btnAllSensorControl_Click" HorizontalAlignment="Left" Width="176" >
+                                        <StackPanel Orientation="Horizontal">
+                                            -->
+                                    <!--<Image Source="Resources/lamp_off.png" Width="30"/>-->
+                                    <!--
+                                            <TextBlock Text="Основное освещение" />
+                                        </StackPanel>
+                                    </Button>
+                                    <Button Grid.Row="1" Margin="3" Background="White" Uid="S" Click="btnAllSensorControl_Click">
+                                        <StackPanel Orientation="Horizontal">
+                                            -->
+                                    <!--<Image Source="Resources/lamp_off.png" Width="30"/>-->
+                                    <!--
+                                            <TextBlock Text="Плавное освещение" />
+                                        </StackPanel>
+                                    </Button>
+                                    <Button Grid.Row="2" Margin="3" Background="White" Uid="B" Click="btnAllSensorControl_Click">
+                                        <StackPanel Orientation="Vertical">
+                                            -->
+                                    <!--<Image Source="Resources/lamp_off.png" Width="30"/>-->
+                                    <!--
+                                            <TextBlock Text="Фоновое освещение" />
+                                        </StackPanel>
+                                    </Button>
+                                    <Button Grid.Row="3" Margin="3" Background="White" Uid="CH" Click="btnAllSensorControl_Click">
+                                        <StackPanel Orientation="Vertical">
+                                            -->
+                                    <!--<Image Source="Resources/prop_off.png" Width="30"/>-->
+                                    <!--
+                                            <TextBlock Text="Электроотопление" />
+                                        </StackPanel>
+                                    </Button>
+
+
+
+                                    <Button Grid.Row="5" x:Name="tmp" Margin="3" Click="tmp_Click" Uid="0" MouseRightButtonDown="btnSignaling_MouseRightButtonDown" Background="#FFE6A4A4">
+                                        <StackPanel Orientation="Vertical">
+
+                                            <TextBlock Text="тест кнопка" x:Name="dataSen" />
+                                        </StackPanel>
+                                    </Button>-->
+
+                                </Grid>
+
+
+
+                                <!--<StackPanel Orientation="Horizontal">
+                                    <Button Margin="3" Background="White">
+                                        <StackPanel Orientation="Vertical">
+                                            <Image Source="Resources/lamp_off.png" Width="30"/>
+                                            <TextBlock Text="Свет" />
+                                        </StackPanel>
+                                    </Button>
+                                    <Button Margin="3" Background="White">
+                                        <StackPanel Orientation="Vertical">
+                                            <Image Source="Resources/lamp_off.png" Width="30"/>
+                                            <TextBlock Text="Ф.Свет" />
+                                        </StackPanel>
+                                    </Button>
+                                    <Button Margin="3" Background="White">
+                                        <StackPanel Orientation="Vertical">
+                                            <Image Source="Resources/prop_off.png" Width="30"/>
+                                            <TextBlock Text="Отопление" />
+                                        </StackPanel>
+                                    </Button>
+                                    <Button x:Name="btnSignaling" Margin="3" Click="btnSignaling_Click" Uid="0" MouseRightButtonDown="btnSignaling_MouseRightButtonDown" Background="White">
+                                        <StackPanel Orientation="Vertical">
+                                            <Image Source="Resources/signal_off.png" Width="30"/>
+                                            <TextBlock Text="Сигнализация" />
+                                        </StackPanel>
+                                    </Button>
+
+
+                                    <Button x:Name="tmp" Margin="3" Click="tmp_Click" Uid="0" MouseRightButtonDown="btnSignaling_MouseRightButtonDown" Background="White">
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock Text="опрос" />
+                                            <TextBlock Text="опрос" x:Name="dataSen" />
+                                        </StackPanel>
+                                    </Button>
+                                   
+
+                                </StackPanel>-->
+                            </GroupBox>
+
+                            <GroupBox Grid.Row="1" BorderBrush="Black" Margin="3,0" ToolTip="Управление сигнализацией" >
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="Сигнализация" />
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="0.8*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="0.8*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="0.8*"/>
+                                        <RowDefinition Height="1.1*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Content="Частота:"/>
+                                    <Label Grid.Row="2" Grid.ColumnSpan="2" Content="Длительность:"/>
+                                    <Label Grid.Row="4" Grid.ColumnSpan="2" Content="Интервал [мс]:"/>
+                                    <!--<TextBox Grid.Row="1" Margin="4,0"/>
+                                    <TextBox Grid.Row="3" Margin="4,0"/>-->
+                                    <StackPanel  Grid.Row="1" Grid.ColumnSpan="2" Margin="4,0" Orientation="Horizontal">
+                                        <Slider x:Name="sldSigFr" Width="130" SmallChange="1" ValueChanged="sldAllL_ValueChanged" Maximum="9"/>
+                                        <TextBlock x:Name="tbSigFr" VerticalAlignment="Center" Padding="1,0,0,0"><Run Text="0"/></TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="3" Margin="4,0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                                        <Slider x:Name="sldSigLen" Width="130" SmallChange="1" ValueChanged="sldAllL_ValueChanged"/>
+                                        <TextBlock x:Name="tbSigLen" VerticalAlignment="Center" Padding="1,0,0,0">0</TextBlock>
+                                    </StackPanel>
+
+
+                                    <!--<Button Grid.Row="4" x:Name="btnSignaling" Margin="3" Uid="A" Click="btnAllSensorControl_Click" MouseRightButtonDown="btnSignaling_MouseRightButtonDown" Background="White">
+                                        <StackPanel Orientation="Vertical">
+                                            -->
+                                    <!--<Image Source="Resources/signal_off.png" Width="30"/>-->
+                                    <!--
+                                            <TextBlock Text="Сигнализация" />
+                                        </StackPanel>
+
+                                    </Button>-->
+                                    <xctk:IntegerUpDown x:Name="IUpDownSign" Grid.Row="5" Margin="3" Grid.ColumnSpan="2" ToolTip="Интервал повторения между сигналами" Minimum="250" Maximum="50000" Value="1000" ValueChanged="IUpDownSign_ValueChanged"/>
+                                    <Button Uid="AA1" x:Name="btnSignOn" Margin="0,3,3,0" Grid.Row="6" Grid.Column="0" Background="#FFD3F3FD"  Click="btnAllSensorControl_Click" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" Width="76">Включить</Button>
+                                    <Button Uid="AA0" Margin="3,3" Grid.Row="6" Grid.Column="1" Background="#FFFFD9D9"  Click="btnAllSensorControl_Click" >Выключить</Button>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Grid.Row="2" BorderBrush="Black" Margin="3,0">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="Дата/время контроллера" />
+                                </GroupBox.Header>
+                                <StackPanel>
+                                    <xctk:DateTimePicker x:Name="dtpTimeArduino" Margin="5,0" Format="Custom" FormatString="G" TextAlignment="Left" Kind="Utc"/>
+                                    <Button x:Name="btnSetDateTimeArduino" Margin="5,5,5,0" Background="White" Click="btnSetDateTimeArduino_Click" Content="Установить" ToolTip="Установка даты/времени котроллера"/>
+                                    <Button x:Name="btnSetDateTimeNowArduino" Margin="5,5,5,0" Background="White" Click="btnSetDateTimeNowArduino_Click" Content="Установить с ПК" ToolTip="Установка даты/времени котроллера"/>
+                                </StackPanel>
+                            </GroupBox>
+                            <GroupBox Grid.Row="3" BorderBrush="Black" Margin="3,0" HorizontalAlignment="Stretch" Width="Auto">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="Опрос датчиков" />
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" Margin="3,0" ToolTip="Активация/деактивация автономного опроса всех датчиков">Орашивать :</TextBlock>
+                                        <RadioButton x:Name="rbPollSensorOn" VerticalAlignment="Center" Margin="3,0" Checked="rbPollSensorOnOff_Checked" Content="Да"/>
+                                        <RadioButton x:Name="rbPollSensorOff" VerticalAlignment="Center" IsChecked="True"  Margin="3,0" Checked="rbPollSensorOnOff_Checked">Нет</RadioButton>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,3,0,0" x:Name="spWriteDBBool">
+                                        <TextBlock VerticalAlignment="Center" Margin="3,0" ToolTip="Активация/деактивация автономного опроса всех датчиков">Записывать даныне в БД:</TextBlock>
+                                        <CheckBox x:Name="checkBWiteDB" VerticalAlignment="Center" IsChecked="False" Checked="checkBWiteDB_Checked"/>
+                                        <!--<RadioButton x:Name="rbFixedDBYes" VerticalAlignment="Center" Margin="3,0" Checked="rbPollSensorOnOff_Checked">Да</RadioButton>
+                                        <RadioButton x:Name="rbFixedDBNo" VerticalAlignment="Center" IsChecked="True"  Margin="3,0" Checked="rbPollSensorOnOff_Checked">Нет</RadioButton>-->
+                                    </StackPanel>
+                                    <TextBlock Grid.Row="2" Text="Частота опроса [мс]:" Margin="3"/>
+                                    <xctk:IntegerUpDown x:Name="IUpDown" Grid.Row="3" Margin="3" Minimum="10" Maximum="5000" Value="1000"/>
+                                    <TextBlock Grid.Row="4" Text="Задержка COM-порта [мс]:" Margin="3"/>
+                                    <xctk:IntegerUpDown x:Name="IUpDown2" Grid.Row="5" Margin="3" Minimum="10" Maximum="5000" Value="300"/>
+                                    <Button Grid.Row="6"  x:Name="btnSetFrPollingSensor" Margin="3" Background="White" Content="Установить" Click="btnSetFrPollingSensor_Click" ToolTip="Установка заданной часототы опроса датчиков" />
+                                    <Button Grid.Row="7" x:Name="btnPowerStatistic" Margin="3,3,3,0" Click="btnPowerStatistic_Click" Background="White" Content="Статистические графики" ToolTip="Открытие окна с отображением накапливаемой с датчиков статистики в виде графиков" Height="20" VerticalAlignment="Top"/>
+                                </Grid>
+                            </GroupBox>
+
+                            <GroupBox Grid.Row="4" BorderBrush="Black" Margin="3,0" HorizontalAlignment="Stretch" Width="Auto">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="Диапазоны датчиков" />
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <ComboBox Grid.Row="0" Margin="3" x:Name="cbRageSensor" SelectionChanged="cbRageSensor_SelectionChanged">
+                                        <ComboBoxItem Uid="T" IsSelected="True">Датчик температуры</ComboBoxItem>
+                                        <ComboBoxItem Uid="H">Датчик влажности</ComboBoxItem>
+                                        <ComboBoxItem Uid="P">Датчик атм. давления</ComboBoxItem>
+                                        <ComboBoxItem Uid="C">Датчик тока</ComboBoxItem>
+                                        <ComboBoxItem Uid="Power">Датчик мощности</ComboBoxItem>
+                                    </ComboBox>
+
+                                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="3">
+                                        <TextBlock VerticalAlignment="Center">От</TextBlock>
+                                        <xctk:IntegerUpDown x:Name="IUpDownStartRange" Margin="3" Minimum="200" Maximum="5000" Value="1000" ToolTip="Min: 200, Max: 5000"/>
+                                        <TextBlock VerticalAlignment="Center">До</TextBlock>
+                                        <xctk:IntegerUpDown x:Name="IUpDownEndRange" Margin="3" Minimum="200" Maximum="5000" Value="1000" ToolTip="Min: 200, Max: 5000"/>
+                                    </StackPanel>
+                                    <Button x:Name="btnSetRangeSensor" Grid.Row="2" Margin="5,5,5,0" Background="White" Content="Установить" ToolTip="Установка даты/времени котроллера" Click="btnSetRangeSensor_Click" Height="20" VerticalAlignment="Top"/>
+
+                                </Grid>
+                            </GroupBox>
+
+                            <GroupBox Grid.Row="5" BorderBrush="Black" Margin="3,0">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="Интерфейс" />
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Button Grid.Row="0" x:Name="btnReBuildUI" Margin="3" Background="White" Content="Сменить вид" Click="btnReBuildUI_Click" ToolTip="Смена вида расположения разделов проеции макета &quot;Умное здание&quot;"/>
+
+                                    <StackPanel Grid.Row="1">
+                                        <TextBlock>Элементы:</TextBlock>
+                                        <RadioButton x:Name="rbChangeUi" Margin="0,2" GroupName="rbView" Content="Все" IsChecked="True" Checked="RbElementView_Checked"/>
+                                        <RadioButton  x:Name="rbChangeUiDev" Margin="0,2" GroupName="rbView" Content="Устройства" Checked="RbElementView_Checked"/>
+                                        <RadioButton x:Name="rbChangeUiSens" Margin="0,2"  GroupName="rbView" Content="Датчики" Checked="RbElementView_Checked"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GroupBox>
+
+                            <!--<controls:RadialGauge x:Name="RadialGaugeControl" Column="1" Value="70" Minimum="0" 
+	                            Maximum="180" TickSpacing="20" ScaleWidth="26" Unit="Units" TickBrush="Gainsboro"
+	                            ScaleTickBrush="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+	                            NeedleWidth="5" TickLength="18">
+                            </controls:RadialGauge>-->
+
+
+                        </Grid>
+                    </ScrollViewer>
+
+
+
+                    <Button DockPanel.Dock="Right" x:Name="btnOpenPanel" Click="Button_Click" BorderThickness="0" Background="#FF6A8BA6" >
+                        <Image x:Name="arrow_img_fr" Source="Resources\Arrow2.png" Width="20" />
+                    </Button>
+
+
+
+                    <!--Схема здания-->
+                    <Grid Margin="5" x:Name="grdHousePlan">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="0.8*"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="0.5*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <GroupBox Header="Уведомления" Grid.Row="8" Grid.ColumnSpan="3">
+                            <RichTextBox x:Name="rtbNotification" IsReadOnly="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" MouseDoubleClick="rtbNotification_MouseDoubleClick"/>
+                        </GroupBox>
+
+                        <!--<Button DockPanel.Dock="Bottom" x:Name="btnPanelNotice" Click="Button_Click" BorderThickness="0" Background="#FF6A8BA6" >
+                            Панель уведомлений
+                        </Button>-->
+
+
+                        <GridSplitter Grid.Column="1" Grid.Row="1"  Grid.RowSpan="6" ShowsPreview="False" Width="3"
+        HorizontalAlignment="Center" VerticalAlignment="Stretch" Background="White" />
+                        <GridSplitter Grid.Row="1" Grid.ColumnSpan="3" ShowsPreview="False" Height="3"
+        HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="White"/>
+                        <GridSplitter Grid.Row="3" Grid.ColumnSpan="3" ShowsPreview="False" Height="3"
+        HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="White"/>
+                        <GridSplitter Grid.Row="5" Grid.ColumnSpan="3" ShowsPreview="False" Height="3"
+        HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="White"/>
+                        <GridSplitter Grid.Row="7" Grid.ColumnSpan="3" ShowsPreview="False" Height="3"
+        HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="White"/>
+
+                        <!--МАНСАРДА-->
+                        <GroupBox  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BorderBrush="Black">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold" Content="5 - МАНСАРДА" />
+                            </GroupBox.Header>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <Grid x:Name="grdRoom5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="0"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <GroupBox x:Name="gbDevice5" Header="Устройства" Grid.Row="0">
+                                        <!--<Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition></RowDefinition>
+                                                <RowDefinition></RowDefinition>
+                                                <RowDefinition></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>-->
+                                        <!--<TextBlock Grid.Row="0" Grid.Column="0" TextWrapping="Wrap">Основное освещение</TextBlock>-->
+                                        <!--<TextBlock Grid.Row="0" Grid.Column="1" TextWrapping="Wrap">Фоновое освещение</TextBlock>-->
+
+                                        <WrapPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <Button  Uid="5" x:Name="btnLight5" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Основное освещение (ЛКМ - быстрая активация, ПКМ - плавная активация)"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="5" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0" VerticalAlignment="Center" Width="75" Orientation="Horizontal" x:Name="sldLight5"  SmallChange="1" Interval="500" ToolTip="Интенсивность освещения" />
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <Grid>
+                                                <Button Uid="6" x:Name="btnBackLight6" Grid.Row="1"  Grid.Column="1" MaxWidth="100" Click="btnBackLight_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  BorderThickness="0" Background="{x:Null}" MouseRightButtonDown="btnBackLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Фоновое освещение - слева"/>
+                                                </Button>
+                                                <xctk:ColorPicker x:Name="colorBackLight6" Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" MaxWidth="45" SelectedColor="Black" ShowStandardColors="True" ShowRecentColors="True" ShowAvailableColors="False"/>
+                                                <TextBlock HorizontalAlignment="Center" Margin="0,32" FontSize="25" FontWeight="Bold">L</TextBlock>
+                                            </Grid>
+                                            <Grid>
+                                                <Button Uid="5" x:Name="btnBackLight5" Grid.Row="1"  Grid.Column="1" MaxWidth="100" Click="btnBackLight_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  BorderThickness="0" Background="{x:Null}" MouseRightButtonDown="btnBackLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Фоновое освещение - справа"/>
+                                                </Button>
+                                                <xctk:ColorPicker x:Name="colorBackLight5" Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" MaxWidth="45" SelectedColor="Black" ShowStandardColors="True" ShowRecentColors="True" ShowAvailableColors="False"/>
+                                                <TextBlock HorizontalAlignment="Center" Margin="0,32" FontSize="25" FontWeight="Bold">R</TextBlock>
+                                            </Grid>
+
+
+                                        </WrapPanel>
+
+                                        <!--</Grid>-->
+                                    </GroupBox>
+                                    <GroupBox x:Name="gbSensor5" Header="Датчики" Grid.Row="1">
+
+                                        <WrapPanel>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgTemperature5" Uid="T5" Width="120" Margin="3,3,3,0"  
+                                                   From="-10" To="35" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик температуры" MouseDown="HandSensorPolling_MouseDown"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Температура [C°]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgHumidity5" Uid="H5"  Width="120" Margin="3" 
+                                                   From="0" To="100" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик влажности" MouseDown="HandSensorPolling_MouseDown"/>
+                                                <TextBlock VerticalAlignment="Center" Margin="3" HorizontalAlignment="Center" Grid.Row="1">Влажность [%]</TextBlock>
+                                            </Grid>
+
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgLight6" Uid="L6"  Width="120" Margin="3" 
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик освещенности по левую часть" MouseDown="HandSensorPolling_MouseDown"/>
+                                                <TextBlock VerticalAlignment="Center" Margin="3" HorizontalAlignment="Center" Grid.Row="1">Освещенность слева [у.е.]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgLight5" Uid="L5"  Width="120" Margin="3" 
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик освещенности по правую часть" MouseDown="HandSensorPolling_MouseDown"/>
+                                                <TextBlock VerticalAlignment="Center" Margin="3" HorizontalAlignment="Center" Grid.Row="1">Освещенность справа [у.е]</TextBlock>
+                                            </Grid>
+
+                                            <!--<Grid>
+                                                <Image Source="Resources/L_no.png" MaxWidth="80" Margin="3" Uid="L6" Tag="Resources/L_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик освещения - слева"/>
+                                                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontWeight="Bold">L</TextBlock>
+                                            </Grid>
+                                            <Grid>
+                                                <Image Source="Resources/L_no.png" MaxWidth="80" Margin="3" Uid="L5" Tag="Resources/L_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик освещения - справа"/>
+                                                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontWeight="Bold">R</TextBlock>
+                                            </Grid>-->
+                                            <!--<Image Source="Resources/L_no.png" MaxWidth="80" Margin="3" Uid="L5"/>-->
+                                            <Image Source="Resources/M_no.png" MaxWidth="80" Margin="3" Uid="M5" Tag="Resources/M_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик движения"/>
+                                        </WrapPanel>
+
+
+                                    </GroupBox>
+                                </Grid>
+                            </ScrollViewer>
+                        </GroupBox>
+
+                        <!--ВАННАЯ-->
+                        <GroupBox Grid.Row="2" Grid.Column="0" Margin="0,0,5,0" BorderBrush="Black">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold" Content="3 - ВАННАЯ" />
+                            </GroupBox.Header>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <Grid x:Name="grdRoom4">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="0"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <GroupBox x:Name="gbDevice3" Header="Устройства" Grid.Row="0">
+
+                                        <WrapPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <Button  Uid="3" x:Name="btnLight3" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Основное освещение"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="3" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0" VerticalAlignment="Center" Width="75" Orientation="Horizontal" x:Name="sldLight3"  SmallChange="1" Interval="500" ToolTip="Интенсивность освещения" />
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <!--<Button  Uid="3" x:Name="btnLight3" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseWheel="btnLight_MouseWheel" MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                <Image Source="Resources/L_no.png" Tag="Resources/L_no.png"/>
+                                                <Button.ToolTip>
+                                                    <ToolTip Opacity="0.9" StaysOpen="True">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Slider  Uid="3"  Margin="0,4,0,0" Width="100" Orientation="Horizontal" x:Name="sldLight3" PreviewMouseUp="sldHeating_PreviewMouseUp" SmallChange="1" Interval="500" PreviewMouseDoubleClick="sldHeating_PreviewMouseDoubleClick" />
+                                                            <Label Content="0"/>
+
+                                                        </StackPanel>
+                                                    </ToolTip>
+                                                </Button.ToolTip>
+                                            </Button>-->
+
+                                            <Grid>
+                                                <Button Uid="3" x:Name="btnBackLight3" Grid.Row="1"  Grid.Column="1" MaxWidth="100" Click="btnBackLight_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  BorderThickness="0" Background="{x:Null}" MouseRightButtonDown="btnBackLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Фоновое освещение"/>
+                                                </Button>
+                                                <xctk:ColorPicker x:Name="colorBackLight3" Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" MaxWidth="45" SelectedColor="Black" ShowStandardColors="True" ShowRecentColors="True" ShowAvailableColors="False"/>
+                                            </Grid>
+
+                                        </WrapPanel>
+
+                                    </GroupBox>
+                                    <GroupBox x:Name="gbSensor4" Header="Датчики" Grid.Row="1">
+                                        <WrapPanel>
+
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgTemperature3" Uid="T3"   Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="-10" To="35" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик температуры"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Температура [C°]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgLight3" Uid="L3"   Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик освещенности"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Освещенность [у.е.]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgWater3" Uid="W3"   Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик протечки воды"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Протечка [у.е.]</TextBlock>
+                                            </Grid>
+
+
+                                            <!--<Image Source="Resources/L_no.png" MaxWidth="80" Margin="3" Uid="L3" Tag="Resources/L_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик освещения"/>-->
+                                            <Image Source="Resources/M_no.png" MaxWidth="80" Margin="3" Uid="M3" Tag="Resources/M_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик движения"/>
+                                            <!--<Image Source="Resources/W_no.png" MaxWidth="80" Margin="3" Uid="W3" Tag="Resources/W_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик протечки воды"/>-->
+                                        </WrapPanel>
+                                    </GroupBox>
+                                </Grid>
+                            </ScrollViewer>
+                        </GroupBox>
+
+                        <!--СПАЛЬНЯ-->
+                        <GroupBox Grid.Row="2" Grid.Column="3" BorderBrush="Black">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold" Content="4 - СПАЛЬНЯ" />
+                            </GroupBox.Header>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" >
+                                <Grid x:Name="grdRoom3">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="0"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <GroupBox x:Name="gbDevice4" Header="Устройства" Grid.Row="0">
+
+                                        <WrapPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <Button  Uid="4" x:Name="btnLight4" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"    MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Основное освещение"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="4" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0"  VerticalAlignment="Center" Width="75" Orientation="Horizontal" x:Name="sldLight4"  SmallChange="1" Interval="500" ToolTip="Интенсивность освещения"/>
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <!--<Button  Uid="4" x:Name="btnLight4" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseWheel="btnLight_MouseWheel" MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                <Image Source="Resources/L_no.png" Tag="Resources/L_no.png"/>
+                                                <Button.ToolTip>
+                                                    <ToolTip Opacity="0.9" StaysOpen="True">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Slider  Uid="5"  Margin="0,4,0,0" Width="100" Orientation="Horizontal" x:Name="sldLight4" PreviewMouseUp="sldHeating_PreviewMouseUp" SmallChange="1" Interval="500" PreviewMouseDoubleClick="sldHeating_PreviewMouseDoubleClick" />
+                                                            <Label Content="0"/>
+
+                                                        </StackPanel>
+                                                    </ToolTip>
+                                                </Button.ToolTip>
+                                            </Button>-->
+
+                                            <Grid>
+                                                <Button Uid="4" x:Name="btnBackLight4" Grid.Row="1"  Grid.Column="1" MaxWidth="100" Click="btnBackLight_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  BorderThickness="0" Background="{x:Null}" MouseRightButtonDown="btnBackLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Фоновое освещение"/>
+                                                </Button>
+                                                <xctk:ColorPicker x:Name="colorBackLight4" Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" MaxWidth="45" SelectedColor="Black" ShowStandardColors="True" ShowRecentColors="True" ShowAvailableColors="False"/>
+                                            </Grid>
+                                            <StackPanel Orientation="Vertical">
+                                                <Button Uid="4" x:Name="btnProp4" ToolTipService.ShowDuration="60000" Click="btnProp_Click" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="100" BorderThickness="0" Background="{x:Null}"    Tag="sldHeating1" MouseRightButtonDown="btnProp_MouseRightButtonDown">
+                                                    <Image Source="Resources/F_no.png" Tag="Resources/F_no.png" ToolTip="Электроотопление"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="4" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0" VerticalAlignment="Center" Width="70" Orientation="Horizontal" x:Name="sldHeating4"  SmallChange="1" Interval="500" Minimum="-10" ToolTip="Интенсивность системы микроклимата" />
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <!--<Button Uid="4" x:Name="btnProp4" ToolTipService.ShowDuration="60000" Click="btnProp_Click" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseWheel="btnProp_MouseWheel" Tag="sldHeating1" MouseRightButtonDown="btnProp_MouseRightButtonDown">
+                                                <Image Source="Resources/F_no.png" Tag="Resources/F_no.png"/>
+                                                <Button.ToolTip>
+                                                    <ToolTip Opacity="0.9" StaysOpen="True">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Slider Uid="4" Margin="0,4,0,0" Width="100" Orientation="Horizontal" x:Name="sldHeating4" PreviewMouseUp="sldHeating_PreviewMouseUp" Minimum="-10"  Interval="500" PreviewMouseDoubleClick="sldHeating_PreviewMouseDoubleClick" SmallChange="1" />
+                                                            <Label Content="0"/>
+                                                        </StackPanel>
+                                                    </ToolTip>
+                                                </Button.ToolTip>
+                                            </Button>-->
+                                        </WrapPanel>
+
+                                    </GroupBox>
+                                    <GroupBox x:Name="gbSensor3" Header="Датчики" Grid.Row="1">
+                                        <WrapPanel>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgTemperature4" Uid="T4"   Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="-10" To="35" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик температуры"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Температура [C°]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgHumidity4" Uid="H4"  Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="100" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик влажности"/>
+                                                <TextBlock VerticalAlignment="Center" Margin="3" HorizontalAlignment="Center" Grid.Row="1">Влажность [%]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgAtmPressure4" Uid="P4" Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="955" To="1055" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик атмосферного давления"/>
+                                                <TextBlock VerticalAlignment="Center" Margin="3" HorizontalAlignment="Center" Grid.Row="1">Атм. давление [гПа]</TextBlock>
+                                            </Grid>
+
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgLight4" Uid="L4" Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик Освещенности"/>
+                                                <TextBlock VerticalAlignment="Center" Margin="3" HorizontalAlignment="Center" Grid.Row="1">Освещенность [у.е.]</TextBlock>
+                                            </Grid>
+
+                                            <!--<Image Source="Resources/L_no.png" MaxWidth="80" Margin="3" Uid="L4" Tag="Resources/L_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик освещения"/>-->
+                                            <Image Source="Resources/M_no.png" MaxWidth="80" Margin="3" Uid="M4" Tag="Resources/M_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик движения"/>
+                                        </WrapPanel>
+                                    </GroupBox>
+                                </Grid>
+                            </ScrollViewer>
+                        </GroupBox>
+
+                        <!--КУХНЯ-->
+                        <GroupBox Grid.Row="4" Grid.Column="0" Margin="0,0,5,0" BorderBrush="Black">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold" Content="2 - КУХНЯ" />
+                            </GroupBox.Header>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <Grid x:Name="grdRoom2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="0"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <GroupBox x:Name="gbDevice2" Header="Устройства" Grid.Row="0">
+
+                                        <WrapPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <Button  Uid="2" x:Name="btnLight2" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"    MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Основное освещение"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="2" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0" VerticalAlignment="Center" Width="75" Orientation="Horizontal" x:Name="sldLight2"  SmallChange="1" Interval="500" ToolTip="Интенсивность освещения"  />
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <!--<Button  Uid="2" x:Name="btnLight2" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseWheel="btnLight_MouseWheel" MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                <Image Source="Resources/L_no.png" Tag="Resources/L_no.png"/>
+                                                <Button.ToolTip>
+                                                    <ToolTip Opacity="0.9" StaysOpen="True">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Slider  Uid="2"  Margin="0,4,0,0" Width="100" Orientation="Horizontal" x:Name="sldLight2" PreviewMouseUp="sldHeating_PreviewMouseUp" SmallChange="1" Interval="500" PreviewMouseDoubleClick="sldHeating_PreviewMouseDoubleClick" />
+                                                            <Label Content="0"/>
+                                                        </StackPanel>
+                                                    </ToolTip>
+                                                </Button.ToolTip>
+                                            </Button>-->
+
+                                            <Grid>
+                                                <Button Uid="2" x:Name="btnBackLight2" Grid.Row="1"  Grid.Column="1" MaxWidth="100" Click="btnBackLight_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  BorderThickness="0" Background="{x:Null}" MouseRightButtonDown="btnBackLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Фоновое освещение"/>
+                                                </Button>
+                                                <xctk:ColorPicker x:Name="colorBackLight2" Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" MaxWidth="45" SelectedColor="Black" ShowStandardColors="True" ShowRecentColors="True" ShowAvailableColors="False"/>
+                                            </Grid>
+                                        </WrapPanel>
+
+                                    </GroupBox>
+                                    <GroupBox x:Name="gbSensor2" Header="Датчики" Grid.Row="1">
+                                        <WrapPanel>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgTemperature2"  Uid="T2"  Width="120" Margin="3"  MouseDown="HandSensorPolling_MouseDown"
+                                                   From="-10" To="35" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик температуры"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Температура [C°]</TextBlock>
+                                            </Grid>
+
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgLight2"  Uid="L2"  Width="120" Margin="3"  MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик освещенности"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Освещенность [у.е.]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgGas2"  Uid="G2"  Width="120" Margin="3"  MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик газа"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Газ [у.е.]</TextBlock>
+                                            </Grid>
+
+                                            <!--<Image Source="Resources/L_no.png" MaxWidth="80" Margin="3" Uid="L2" Tag="Resources/L_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик освещения"/>-->
+                                            <Image Source="Resources/M_no.png" MaxWidth="80" Margin="3" Uid="M2" Tag="Resources/M_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик движения"/>
+                                            <!--<Image Source="Resources/G_no.png" MaxWidth="80" Margin="3" Uid="G2" Tag="Resources/G_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик газа и дыма"/>-->
+                                        </WrapPanel>
+                                    </GroupBox>
+                                </Grid>
+                            </ScrollViewer>
+                        </GroupBox>
+
+                        <!--ГОСТИННАЯ-->
+                        <GroupBox Grid.Row="4" Grid.Column="3" BorderBrush="Black">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold" Content="1 - ГОСТИНАЯ" />
+                            </GroupBox.Header>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <Grid x:Name="grdRoom1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="0"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <GroupBox x:Name="gbDevice1" Header="Устройства" Grid.Row="0">
+
+                                        <WrapPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <Button  Uid="1" x:Name="btnLight1" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"    MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Основное освещение"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="1" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0" VerticalAlignment="Center" Width="75" Orientation="Horizontal" x:Name="sldLight1"  SmallChange="1" Interval="500" ToolTip="Интенсивность освещения"  />
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+                                            <!--<Button  Uid="1" x:Name="btnLight1" Grid.Row="1" Grid.Column="0" ToolTipService.ShowDuration="60000" Click="btnLight_Click"  VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="15" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseWheel="btnLight_MouseWheel" MouseRightButtonDown="btnLight_MouseRightButtonDown">
+                                                <Image Source="Resources/L_no.png" Tag="Resources/L_no.png"/>
+                                                <Button.ToolTip>
+                                                    <ToolTip Opacity="0.9" StaysOpen="True">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Slider  Uid="1"  Margin="0,4,0,0" Width="100" Orientation="Horizontal" x:Name="sldLight1" PreviewMouseUp="sldHeating_PreviewMouseUp" SmallChange="1" Interval="500" PreviewMouseDoubleClick="sldHeating_PreviewMouseDoubleClick" />
+                                                            <Label Content="0"/>
+                                                        </StackPanel>
+                                                    </ToolTip>
+                                                </Button.ToolTip>
+                                            </Button>-->
+
+                                            <Grid>
+                                                <Button Uid="1" x:Name="btnBackLight1" Grid.Row="1"  Grid.Column="1" MaxWidth="100" Click="btnBackLight_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  BorderThickness="0" Background="{x:Null}" MouseRightButtonDown="btnBackLight_MouseRightButtonDown">
+                                                    <Image Source="Resources/L_no.png" Tag="Resources/L_no.png" ToolTip="Фоновое освещение"/>
+                                                </Button>
+                                                <xctk:ColorPicker x:Name="colorBackLight1" Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" MaxWidth="45" SelectedColor="Black" ShowStandardColors="True" ShowRecentColors="True" ShowAvailableColors="False"/>
+                                            </Grid>
+
+                                            <StackPanel Orientation="Vertical">
+                                                <Button Uid="1" x:Name="btnProp1" ToolTipService.ShowDuration="60000" Click="btnProp_Click" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   Tag="sldHeating1" MouseRightButtonDown="btnProp_MouseRightButtonDown">
+                                                    <Image Source="Resources/F_no.png" Tag="Resources/F_no.png" ToolTip="Электроотопление"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="1" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0" VerticalAlignment="Center" Width="70" Orientation="Horizontal" x:Name="sldHeating1"  SmallChange="1" Interval="500" Minimum="-10" ToolTip="Интенсивность системы микроклимата" />
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <!--<Button Uid="1" x:Name="btnProp1" ToolTipService.ShowDuration="60000" Click="btnProp_Click" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="100" BorderThickness="0" Background="{x:Null}"   MouseWheel="btnProp_MouseWheel" Tag="sldHeating1" MouseRightButtonDown="btnProp_MouseRightButtonDown">
+                                                <Image Source="Resources/F_no.png" Tag="Resources/F_no.png"/>
+                                                <Button.ToolTip>
+                                                    <ToolTip Opacity="0.9" StaysOpen="True">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Slider Uid="1" Margin="0,4,0,0" Width="100" Orientation="Horizontal" x:Name="sldHeating1" PreviewMouseUp="sldHeating_PreviewMouseUp" Minimum="-10"  Interval="500" PreviewMouseDoubleClick="sldHeating_PreviewMouseDoubleClick" SmallChange="1" />
+                                                            <Label Content="0"/>
+                                                        </StackPanel>
+                                                    </ToolTip>
+                                                </Button.ToolTip>
+                                            </Button>-->
+
+                                            <StackPanel Orientation="Vertical">
+                                                <Button Uid="1" x:Name="btnDoor1" Click="btnDoor_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  MaxWidth="100" BorderThickness="0" Background="{x:Null}"  MouseRightButtonDown="btnDoor_MouseRightButtonDown" >
+                                                    <Image Source="Resources/D_no.png" Tag="Resources/D_no.png" ToolTip="Дверь"/>
+                                                </Button>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <Slider  Uid="1" ValueChanged="sldAllL_ValueChanged" Margin="0,0,5,0" VerticalAlignment="Center" Width="75" Orientation="Horizontal" x:Name="sldDoor1"  SmallChange="1" Interval="500" ToolTip="Степень открытия двери" />
+                                                    <TextBlock VerticalAlignment="Center" FontSize="15" Text="0"/>
+                                                </StackPanel>
+                                            </StackPanel>
+
+                                            <!--<Button Uid="1" x:Name="btnDoor1" Click="btnDoor_Click" HorizontalAlignment="Left" VerticalAlignment="Top"  MaxWidth="100" BorderThickness="0" Background="{x:Null}"  MouseRightButtonDown="btnDoor_MouseRightButtonDown" MouseWheel="btnLight_MouseWheel">
+                                                <Image Source="Resources/D_no.png" Tag="Resources/D_no.png"/>
+                                                <Button.ToolTip>
+                                                    <ToolTip Opacity="0.9" StaysOpen="True">
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <Slider  Uid="1"  Margin="0,4,0,0" Width="100" Orientation="Horizontal" x:Name="sldDoor1" PreviewMouseUp="sldHeating_PreviewMouseUp" SmallChange="1" Interval="500" PreviewMouseDoubleClick="sldHeating_PreviewMouseDoubleClick" />
+                                                            <Label Content="0"/>
+                                                        </StackPanel>
+                                                    </ToolTip>
+                                                </Button.ToolTip>
+                                            </Button>-->
+                                        </WrapPanel>
+
+                                    </GroupBox>
+                                    <GroupBox x:Name="gbSensor1" Header="Датчики" Grid.Row="1">
+                                        <WrapPanel>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgTemperature1"  Uid="T1"  Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="-10" To="35" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик температуры"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Температура [C°]</TextBlock>
+                                            </Grid>
+                                            <Grid Height="120">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="2*"></RowDefinition>
+                                                    <RowDefinition Height="1*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Wpf:Gauge Grid.Row="0" x:Name="lgLight1"  Uid="L1"  Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="1023" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик освещенности"/>
+                                                <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Освещенность [у.е.]</TextBlock>
+                                            </Grid>
+
+
+                                            <!--<agc:Gauge Theme="PressureGauge"  Stroke="Black" Height="80" Width="80" Margin="0,0,0,20">
+                                                <agc:Gauge.PrimaryScale>
+                                                    <agc:Scale x:Name="ggTemp1" Value="0" RangeEnd="50" RangeBegin="-25" RadiusFactor="1.5"
+                           AngleEnd="315" AngleBegin="225" MajorTickDiv="15" MinorTickCount="2"  ArcPadding="10" ArcStrokeThickness="1" TertiaryTickCount="1" ValueFormat="F1" ValueIndicatorDistance="-2.2">
+                                                        <agc:Scale.MajorTicks>
+                                                            <agc:MajorTicksLine LabelFormat=""/>
+                                                        </agc:Scale.MajorTicks>
+                                                        <agc:Scale.Label >
+                                                            <TextBlock>C°</TextBlock>
+                                                        </agc:Scale.Label>
+                                                    </agc:Scale>
+                                                </agc:Gauge.PrimaryScale>
+                                            </agc:Gauge>-->
+
+                                            <!--<Image Source="Resources/L_no.png" MaxWidth="80" Margin="3" Uid="L1" Tag="Resources/L_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик освещения"/>-->
+                                            <Image Source="Resources/M_no.png" MaxWidth="80" Margin="3" Uid="M1" Tag="Resources/M_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик движения"/>
+                                            <Image Source="Resources/D_no.png" MaxWidth="80" Margin="3" Uid="D1" Tag="Resources/D_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик открытия двери"/>
+                                        </WrapPanel>
+                                    </GroupBox>
+                                </Grid>
+                            </ScrollViewer>
+                        </GroupBox>
+
+                        <GroupBox Grid.Row="6" Grid.ColumnSpan="3" BorderBrush="Black" Background="White">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold" Content="КОРПУС" />
+                            </GroupBox.Header>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                        <RowDefinition Height="auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <WrapPanel Grid.Column="0" Grid.ColumnSpan="1">
+                                        <Grid Height="120">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="2*"></RowDefinition>
+                                                <RowDefinition Height="1*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgCurrent61"  Uid="C1"  Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="30" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик тока"/>
+                                            <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Ток INA219 3.2A [мА]</TextBlock>
+                                        </Grid>
+                                        <Grid Height="120">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="2*"></RowDefinition>
+                                                <RowDefinition Height="1*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgCurrent62"  Uid="C2"  Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="-3000" To="3000" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик тока"/>
+                                            <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Ток MAX471 3.0A [мА]</TextBlock>
+                                        </Grid>
+                                        <Grid Height="120">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="2*"></RowDefinition>
+                                                <RowDefinition Height="1*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgCurrent63"  Uid="C3"  Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="5000" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик тока"/>
+                                            <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Ток ACS712 5A [мА]</TextBlock>
+                                        </Grid>
+                                        <Grid Height="120">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="2*"></RowDefinition>
+                                                <RowDefinition Height="1*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgCurrent64"  Uid="C4"  Width="120" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="20000" Value="{Binding ValuesIOT}"
+                                                   LabelsVisibility="Visible" FromColor="#FF00F3FF" ToColor="#FFFB3D3D" ToolTip="Датчик тока"/>
+                                            <TextBlock Grid.Row="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Ток ACS712 20A [мА]</TextBlock>
+                                        </Grid>
+
+
+                                        <!--<agc:Gauge Theme="PressureGauge"  Stroke="Black" Height="80" Width="80" Margin="0,0,0,20">
+                                        <agc:Gauge.PrimaryScale>
+                                            <agc:Scale Value="0" RangeEnd="50" RangeBegin="-25" RadiusFactor="1.5"
+                           AngleEnd="315" AngleBegin="225" MajorTickDiv="15" MinorTickCount="2"  ArcPadding="10" ArcStrokeThickness="1" TertiaryTickCount="1" ValueFormat="F1" ValueIndicatorDistance="-2.2">
+                                                <agc:Scale.MajorTicks>
+                                                    <agc:MajorTicksLine LabelFormat=""/>
+                                                </agc:Scale.MajorTicks>
+                                                <agc:Scale.Label >
+                                                    <TextBlock>мА</TextBlock>
+                                                </agc:Scale.Label>
+                                            </agc:Scale>
+                                        </agc:Gauge.PrimaryScale>
+                                    </agc:Gauge>-->
+
+                                        <Image VerticalAlignment="Center" Source="Resources/V_no.png" MaxWidth="80" Margin="3" Uid="V1" Tag="Resources/V_no.png" MouseDown="HandSensorPolling_MouseDown" ToolTip="Датчик вибрации"/>
+
+                                    </WrapPanel>
+                                    <Grid Height="80"  HorizontalAlignment="Right" Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition Height="0.5*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock x:Name="tbTime" VerticalAlignment="Center" FontSize="50" Uid="R6T" ToolTip="Время контроллера">00:00</TextBlock>
+                                        <TextBlock x:Name="tbDate" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Grid.Row="1" Uid="R6D" ToolTip="Время контроллера" >01.01.10</TextBlock>
+                                    </Grid>
+
+                                    <WrapPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
+
+                                        <Grid >
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgPower61"  Uid="C1Power"  Height="40" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="5000" Value="{Binding ValuesIOT}" FromColor="White" ToColor="White" ToolTip="Датчик тока" DisableAnimations="True" AutomationProperties.IsColumnHeader="False" AutomationProperties.IsRequiredForForm="False" AutomationProperties.IsRowHeader="False" IsEnabled="True" InnerRadius="25" Uses360Mode="True" HighFontSize="40">
+                                                <Wpf:Gauge.GaugeBackground>
+                                                    <SolidColorBrush Color="White" Opacity="0.1"/>
+                                                </Wpf:Gauge.GaugeBackground>
+                                            </Wpf:Gauge>
+                                            <TextBlock Grid.Row="2" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Мощность INA219 3.2A [мВт]</TextBlock>
+                                        </Grid>
+                                        <Grid Visibility="Collapsed">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgPower62"   Uid="C2Power"  Height="40" Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="30" Value="{Binding ValuesIOT}" FromColor="White" ToColor="White" ToolTip="Датчик тока"  Uses360Mode="True" IsManipulationEnabled="False" DisableAnimations="True" AutomationProperties.IsColumnHeader="False" AutomationProperties.IsRequiredForForm="False" AutomationProperties.IsRowHeader="False" IsEnabled="True" InnerRadius="60">
+                                                <Wpf:Gauge.GaugeBackground>
+                                                    <SolidColorBrush Color="White" Opacity="0.1"/>
+                                                </Wpf:Gauge.GaugeBackground>
+                                            </Wpf:Gauge>
+                                            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <TextBlock  Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Напряжение [В]:</TextBlock>
+                                                <xctk:DoubleUpDown Uid="C2Power" Width="60" Minimum="0" Maximum="1000000" Value="5"></xctk:DoubleUpDown>
+                                            </StackPanel>
+                                            <TextBlock Grid.Row="2" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Мощность MAX471 3.0A [мВт/ч]</TextBlock>
+                                        </Grid>
+                                        <Grid Visibility="Collapsed">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgPower63"  Uid="C3Power" Height="40"  Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="30" Value="{Binding ValuesIOT}" FromColor="White" ToColor="White" ToolTip="Датчик тока"  Uses360Mode="True" IsManipulationEnabled="False" DisableAnimations="True" AutomationProperties.IsColumnHeader="False" AutomationProperties.IsRequiredForForm="False" AutomationProperties.IsRowHeader="False" IsEnabled="True" InnerRadius="60">
+                                                <Wpf:Gauge.GaugeBackground>
+                                                    <SolidColorBrush Color="White" Opacity="0.1"/>
+                                                </Wpf:Gauge.GaugeBackground>
+                                            </Wpf:Gauge>
+                                            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <TextBlock  Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Напряжение [В]:</TextBlock>
+                                                <xctk:DoubleUpDown  Uid="C3Power" Width="60" Minimum="0" Maximum="1000000" Value="5"></xctk:DoubleUpDown>
+                                            </StackPanel>
+                                            <TextBlock Grid.Row="2" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Мощность ACS712 5A [мВт/ч]</TextBlock>
+                                        </Grid>
+                                        <Grid Visibility="Collapsed">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Wpf:Gauge Grid.Row="0" x:Name="lgPower64"  Uid="C4Power" Height="40"  Margin="3" MouseDown="HandSensorPolling_MouseDown"
+                                                   From="0" To="30" Value="{Binding ValuesIOT}" FromColor="White" ToColor="White" ToolTip="Датчик тока"  Uses360Mode="True" IsManipulationEnabled="False" DisableAnimations="True" AutomationProperties.IsColumnHeader="False" AutomationProperties.IsRequiredForForm="False" AutomationProperties.IsRowHeader="False" IsEnabled="True" InnerRadius="60">
+                                                <Wpf:Gauge.GaugeBackground>
+                                                    <SolidColorBrush Color="White" Opacity="0.1"/>
+                                                </Wpf:Gauge.GaugeBackground>
+                                            </Wpf:Gauge>
+                                            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <TextBlock  Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Напряжение [В]:</TextBlock>
+                                                <xctk:DoubleUpDown Uid="C4Power" Width="60" Minimum="0" Maximum="1000000" Value="12"></xctk:DoubleUpDown>
+                                            </StackPanel>
+                                            <TextBlock Grid.Row="2" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Center">Мощность ACS712 20A [мВт/ч]</TextBlock>
+                                        </Grid>
+                                        <Button Visibility="Collapsed" Height="80" Background="White" BorderBrush="White" x:Name="btnRefreshTimerPower" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnRefreshTimerPower_Click">
+                                            <Image Source="Resources/refresh_power.png" Tag="Resources/refresh_power.png" ToolTip="Сброс таймера мощности" Opacity="0.7"/>
+                                        </Button>
+                                    </WrapPanel>
+
+                                </Grid>
+
+                            </ScrollViewer>
+                        </GroupBox>
+
+                    </Grid>
+                </DockPanel>
+            </TabItem>
+            <!--Вкладка отображения выполняемых действий-->
+            <!--<TabItem Header="Показания">
+                <Grid>
+                    <Grid.RowDefinitions >
+                        <RowDefinition />
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <ScrollViewer>
+                        <Grid x:Name="dgvConfigDevice">
+                            <Grid.RowDefinitions >
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <GroupBox Grid.Row="0">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="1. Гостиная" />
+                                </GroupBox.Header>
+                                <DataGrid x:Name="dgDeviceConfigurationRoom1" Tag="1" ColumnWidth="*" Background="White"/>
+                            </GroupBox>
+                            <GroupBox Grid.Row="1">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="2. Кухня" />
+                                </GroupBox.Header>
+                                <DataGrid x:Name="dgDeviceConfigurationRoom2" Tag="2" ColumnWidth="*" Background="White"/>
+                            </GroupBox>
+                            <GroupBox Grid.Row="2">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="3. Спальня" />
+                                </GroupBox.Header>
+                                <DataGrid x:Name="dgDeviceConfigurationRoom3" Tag="3" ColumnWidth="*" Background="White"/>
+                            </GroupBox>
+                            <GroupBox Grid.Row="3">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="4. Ванная" />
+                                </GroupBox.Header>
+                                <DataGrid x:Name="dgDeviceConfigurationRoom4" Tag="4" ColumnWidth="*" Background="White"/>
+                            </GroupBox>
+                            <GroupBox Grid.Row="4">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="5. Мансарда" />
+                                </GroupBox.Header>
+                                <DataGrid x:Name="dgDeviceConfigurationRoom5" Tag="5" ColumnWidth="*" Background="White"/>
+                            </GroupBox>
+                            <GroupBox Grid.Row="5">
+                                <GroupBox.Header>
+                                    <Label FontWeight="Bold" Content="6. Внешние датчики" />
+                                </GroupBox.Header>
+                                <DataGrid x:Name="dgDeviceConfigurationRoom6" Tag="6" ColumnWidth="*" Background="White"/>
+                            </GroupBox>
+
+
+                        </Grid>
+                    </ScrollViewer>
+                    <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Margin="0,5,10,0" Width="150" Background="White" Content="Сохранить изменения"/>
+                    </StackPanel>
+                </Grid>
+
+
+                -->
+            <!--<DockPanel>
+                  
+                </DockPanel>-->
+            <!--
+            </TabItem>-->
+            <!--Вкладка отображения выполняемых действий-->
+            <TabItem Header="Данные системы" Tag="DBInfoSystem" x:Name="DBTab" ToolTip="Вкладка, отображающая содержимое хранимой в базе информации">
+                <DockPanel>
+                    <!--Выдвигающаяся панель-->
+                    <ScrollViewer DockPanel.Dock="Right" x:Name="svPanelParamDB"  Panel.ZIndex="1" Background="#FFEDF5FD" Width="200" >
+
+                        <GroupBox>
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold" Content="Параметры" />
+                            </GroupBox.Header>
+                            <StackPanel>
+                                <Grid DataContext="{Binding ElementName=dgDB, Path=SelectedItem}" Visibility="Collapsed" >
+                                    <TextBox x:Name="idSel" Text="{Binding Path=id, Mode=OneWay}"></TextBox>
+                                </Grid>
+                                <StackPanel x:Name="spListParamDB">
+
+                                    <!--<Grid x:Name="grdParamStatistic" Tag="ST" DataContext="{Binding ElementName=dgDB, Path=SelectedItem}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                    </Grid>-->
+                                    <Grid x:Name="grdParamAction" Tag="STAA" DataContext="{Binding SelectedItem, ElementName=dgDB}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="8*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock x:Name="tbAAUser" Grid.Row="0" Margin="3"  Grid.ColumnSpan="2"><Run Text="Пользователь:"/></TextBlock>
+                                            <ComboBox x:Name="cbxAAUser"  Grid.Row="1" Grid.Column="0" Margin="3" />
+                                            <CheckBox x:Name="checkBAAUser" Grid.Column="1"  Grid.Row="1" VerticalAlignment="Center"  />
+
+                                            <TextBlock Margin="3" Grid.Row="3" Grid.ColumnSpan="2"><Run Text="Устройство:"/></TextBlock>
+                                            <ComboBox x:Name="cbxSTAADevice"  Grid.Row="4" Margin="3"/>
+                                            <CheckBox x:Name="checkBSTAADevice" Grid.Column="1"  Grid.Row="4" VerticalAlignment="Center"  />
+                                            <TextBlock Margin="3" Grid.Row="5" Grid.ColumnSpan="2"><Run Text="Комната:"/></TextBlock>
+                                            <ComboBox x:Name="cbxSTAARoom" Grid.Row="6" Margin="3" />
+                                            <CheckBox x:Name="checkBSTAARoom" Grid.Column="1"  Grid.Row="6" VerticalAlignment="Center"  />
+                                        </Grid>
+                                        <TextBlock Grid.Row="6" Margin="3"><Run Text="Начало период:"/></TextBlock>
+                                        <xctk:DateTimePicker x:Name="dtpAAFrom"  Grid.Row="7" Margin="3" ValueChanged="dateTimePicerDB_ValueChanged" ToolTip="Начало периода для формирования выборки" FormatString="G" Format="Custom" TextAlignment="Left" Kind="Utc"  />
+                                        <TextBlock Grid.Row="8" Margin="3"><Run Text="Конец периода:"/></TextBlock>
+                                        <xctk:DateTimePicker x:Name="dtpAATo" Grid.Row="9" Margin="3" ValueChanged="dateTimePicerDB_ValueChanged" ToolTip="Конец периода для формирования выборки" FormatString="G" Format="Custom" TextAlignment="Left" Kind="Utc" />
+
+                                    </Grid>
+                                    <Grid x:Name="grdParamDevice" Tag="DEV" DataContext="{Binding ElementName=dgDB, Path=SelectedItem}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Margin="3">Наименование:</TextBlock>
+                                        <TextBox x:Name="tbDEVName" Grid.Row="1" Margin="3"></TextBox>
+                                        <TextBlock Grid.Row="2" Margin="3">Группа:</TextBlock>
+                                        <ComboBox x:Name="cbxDEVGroup" Grid.Row="3" Margin="3" SelectionChanged="cbxGroup_SelectionChanged"></ComboBox>
+                                    </Grid>
+                                    <Grid x:Name="grdParamDeviceGroup" Tag="DEVGR" DataContext="{Binding ElementName=dgDB, Path=SelectedItem}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Margin="3">Название:</TextBlock>
+                                        <TextBox x:Name="tbDEVGRName" Grid.Row="1" Margin="3"></TextBox>
+                                    </Grid>
+                                    <Grid x:Name="grdParamRoom" Tag="RM" DataContext="{Binding ElementName=dgDB, Path=SelectedItem}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Margin="3">Название:</TextBlock>
+                                        <TextBox x:Name="tbRMName" Grid.Row="1" Margin="3"></TextBox>
+                                        <TextBlock Grid.Row="2" Margin="3">Порядковый номер:</TextBlock>
+                                        <xctk:IntegerUpDown x:Name="iudRMSerialNumber" Grid.Row="3" Margin="3" Minimum="0" Value="0"/>
+                                    </Grid>
+                                    <Grid x:Name="grdParamUser" Tag="US" DataContext="{Binding ElementName=dgDB, Path=SelectedItem}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Margin="3">ФИО:</TextBlock>
+                                        <TextBox x:Name="tbUSFullName" Grid.Row="1" Margin="3" ></TextBox>
+                                        <TextBlock Grid.Row="2" Margin="3">Группа:</TextBlock>
+                                        <ComboBox x:Name="cbxUSGroup" Grid.Row="3" Margin="3" SelectionChanged="cbxGroup_SelectionChanged"></ComboBox>
+                                        <TextBlock Grid.Row="4" Margin="3">Пароль:</TextBlock>
+                                        <PasswordBox x:Name="tbUSPswd" Grid.Row="5" Margin="3"></PasswordBox>
+                                    </Grid>
+                                    <Grid x:Name="grdParamUserGroup" Tag="USGR" DataContext="{Binding ElementName=dgDB, Path=SelectedItem}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Margin="3">Наименование:</TextBlock>
+                                        <TextBox x:Name="tbUSGRName" Grid.Row="1" Margin="3" ></TextBox>
+                                    </Grid>
+                                    <StackPanel x:Name="btnControlDB">
+                                        <Button x:Name="btnAddDataDB" Margin="3" Click="btnAddDataDB_Click" ToolTip="Добавление записи для выбранной таблицы" >Добавить</Button>
+                                        <Button x:Name="btnUpdateDataDB" Margin="3" Click="btnUpdateDataDB_Click" ToolTip="Изменение записи в выбранной таблице">Изменить</Button>
+                                        <Button x:Name="btnDeleteDataDB" Margin="3" Click="btnDeleteDataDB_Click" ToolTip="Удаление записи в выбранной таблице">Удалить</Button>
+                                    </StackPanel>
+                                    <Button x:Name="btnEnterQuery" Margin="3" Click="btnEnterQuery_Click" Content="Применить" ToolTip="Применение правила выборки"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+
+
+                        <!--<Label  Margin="6,0" >Устройство:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Комната:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Дата и время регистрации:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Значение:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Аварийность:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+
+
+                        <Label  Margin="6,0" >ФИО пользователя:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Группа:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Дата и время события:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Действие:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Комната:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Устройство:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+
+                        <Label  Margin="6,0" >Наименование:</Label>
+                        <TextBox  Margin="10,0"></TextBox>-->
+
+                        <!--<Label  Margin="6,0" >Наименование:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Порядковый номер:</Label>
+                        <TextBox  Margin="10,0"></TextBox>-->
+
+                        <!--<Label  Margin="6,0" >ФИО:</Label>
+                        <TextBox  Margin="10,0"></TextBox>
+                        <Label  Margin="6,0" >Группа:</Label>
+                        <ComboBox  Margin="10,0">
+                            <Button/>
+                        </ComboBox>-->
+
+                        <!--<Label  Margin="6,0" >Наименование:</Label>
+                        <TextBox  Margin="10,0"></TextBox>-->
+
+
+                        <!--<Button x:Name="button" Content="Добавить" Height="30" Margin="10,10,10,5"/>
+                        <Button x:Name="button_Copy" Content="Изменить" Height="32" Margin="10,5"/>-->
+                        <!--
+                        <Button x:Name="button_Copy1" Content="Удалить" Height="32" Margin="10,5"/>
+
+
+                    </StackPanel>
+                    <Button DockPanel.Dock="Right" x:Name="btnOpenPanelAudit" Click="Button_Click" BorderThickness="0" Background="#FF6A8BA6" >
+                        <Image x:Name="arrow_img_fr_audit" Source="Arrow2.png" Width="20" />
+                    </Button>-->
+
+                    </ScrollViewer>
+                    <Button DockPanel.Dock="Right" x:Name="btnOpenPanelParamDB" Click="btnOpenPanelParamDB_Click" BorderThickness="0" Background="#FF6A8BA6" >
+                        <Image x:Name="arrow_img_fr_audit" Source="Resources\Arrow2.png" Width="20" />
+                    </Button>
+                    <Grid  DockPanel.Dock="Bottom">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="btnPrevALLPage"  Grid.Column="0" Content="&lt;&lt;" Margin="3" Background="White" Click="btnControlPage_Click"></Button>
+                        <Button x:Name="btnPrevPage"  Grid.Column="1" Content="&lt;"  Margin="3" Background="White" Click="btnControlPage_Click"></Button>
+                        <Border Grid.Column="2" BorderBrush="Black"  BorderThickness="0.8" Margin="3">
+                            <TextBlock x:Name="tbNowPage"   VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="16" Background="White" Text="0/0"></TextBlock>
+                        </Border>
+                        <Button x:Name="btnNextPage"  Grid.Column="3" Content="&gt;"  Margin="3" Background="White" Click="btnControlPage_Click"></Button>
+                        <Button x:Name="btnNextALLPage" Grid.Column="5" Content="&gt;&gt;"  Margin="3" Background="White" Click="btnControlPage_Click"></Button>
+                    </Grid>
+
+                    <Grid x:Name="grdTabDB">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TabControl x:Name="tcTabDB" SelectionChanged="TabControl_SelectionChanged" >
+                            <TabItem Tag="ST" x:Name="tiStatistic" Header="Статистика" PreviewMouseDoubleClick="tiUpdateTabDB_PreviewMouseDoubleClick"></TabItem>
+                            <TabItem Tag="AA" Header="Аудит действий" PreviewMouseDoubleClick="tiUpdateTabDB_PreviewMouseDoubleClick"></TabItem>
+                            <TabItem Tag="US" Header="Пользователи" PreviewMouseDoubleClick="tiUpdateTabDB_PreviewMouseDoubleClick"/>
+                            <TabItem Tag="DEV" Header="Устройства" PreviewMouseDoubleClick="tiUpdateTabDB_PreviewMouseDoubleClick"/>
+                            <TabItem Tag="RM" Header="Комнаты" PreviewMouseDoubleClick="tiUpdateTabDB_PreviewMouseDoubleClick"/>
+                            <TabItem Tag="USGR" Header="Группы пользователей" PreviewMouseDoubleClick="tiUpdateTabDB_PreviewMouseDoubleClick"/>
+                            <TabItem Tag="DEVGR" Header="Группы устройств" PreviewMouseDoubleClick="tiUpdateTabDB_PreviewMouseDoubleClick"/>
+                        </TabControl>
+                        <DataGrid Grid.Row="1" Background="White" x:Name="dgDB" ColumnWidth="*"  IsReadOnly="True" />
+                    </Grid>
+
+                </DockPanel>
+            </TabItem>
+            <!--Вкладка настройки подключения-->
+            <TabItem x:Name="elementTIAppSetting" Header="Настройки" ToolTip="Вкладка общих настроек лабораторного стенда " >
+                <Grid>
+                    <Grid.RowDefinitions >
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="272"/>
+                        <ColumnDefinition Width="407*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="18*"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <GroupBox >
+                            <GroupBox.Header>Параметры порта</GroupBox.Header>
+                            <StackPanel Width="250">
+
+                                <Grid>
+                                    <Grid.Resources>
+                                        <Style TargetType="{x:Type ComboBox}">
+                                            <Setter Property="Margin" Value="5"/>
+                                        </Style>
+                                    </Grid.Resources>
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0" Content="Порт:"/>
+                                    <ComboBox x:Name="cbPortName" Grid.Row="0" Grid.Column="1" >
+                                        <ComboBox.Background>
+                                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                                <GradientStop Color="White" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </ComboBox.Background>
+                                    </ComboBox>
+                                    <Label Grid.Row="1" Grid.Column="0" Content="Скорость (бит/с):"/>
+                                    <ComboBox x:Name="cbBaundRate" Grid.Row="1" Grid.Column="1"/>
+                                    <Label Grid.Row="2" Grid.Column="0" Content="Четность:"/>
+                                    <ComboBox x:Name="cbParityBits" Grid.Row="2" Grid.Column="1"/>
+                                    <Label Grid.Row="3" Grid.Column="0" Content="Биты данных:"/>
+                                    <ComboBox x:Name="cbDataBits" Grid.Row="3" Grid.Column="1"/>
+                                    <Label Grid.Row="4" Grid.Column="0" Content="Стоповые биты:"/>
+                                    <ComboBox x:Name="cbStopBits" Grid.Row="4" Grid.Column="1"/>
+                                    <Label Grid.Row="5" Grid.Column="0" Content="Управление потоком:"/>
+                                    <ComboBox x:Name="cbFlowControl" Grid.Row="5" Grid.Column="1"/>
+                                    <Label Grid.Row="6" Grid.Column="0" Content="Таймаут чтения:"/>
+                                    <TextBox x:Name="tbReadTimeout" Grid.Row="6" Grid.Column="1" Margin="4" Text="120"/>
+                                    <Label Grid.Row="7" Grid.Column="0" Content="Таймаут записи:"/>
+                                    <TextBox x:Name="tbWriteTimeout" Grid.Row="7" Grid.Column="1" Margin="4" Text="120"/>
+                                    <Button  Grid.Row="8" 
+                                         Grid.Column="0"
+                                         Grid.ColumnSpan="2" 
+                                         x:Name="btnSetConnection" 
+                                         Click="btnSetConnection_Click"
+                                         Margin="5,3"
+                                         Height="30" Background="White" Content="Подключиться"/>
+
+
+                                </Grid>
+                            </StackPanel>
+                        </GroupBox>
+                        <Button  Grid.Row="1" 
+                                 Margin="3"
+                                         Grid.Column="0" 
+                                         x:Name="btnOpenLoginWindow" 
+                                         Height="30" Background="White" Content="Сменить пользователя" Click="btnOpenLoginWindow_Click" ToolTip="Открытие окна входа в ситему"/>
+                        <Grid Grid.Row="2" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Button  Grid.Column="0" 
+                                  Margin="3"
+                                         
+                                         x:Name="btnSaveConfig" 
+                                         Height="30" Background="White" Content="Сохранить интерфейс" Click="btnSaveConfig_Click" ToolTip="Сохранение конфигурации интерфейса по выбранной пути"/>
+                            <Button  Grid.Column="1" 
+                                  Margin="3"
+                                        
+                                         x:Name="btnOpenConfig" 
+                                         Height="30" Background="White" Content="Открыть интерфейс" Click="btnOpenConfig_Click" ToolTip="Открытие конфигурации интерфейса по выбранному пути"/>
+                        </Grid>
+
+                    </Grid>
+                    <GroupBox Grid.Row="0" Grid.Column="1">
+                        <GroupBox.Header>Консоль управления</GroupBox.Header>
+                        <Grid>
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="7*"/>
+                                <RowDefinition Height="2*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <GroupBox Header="Данные с COM-порта" Grid.Row="0">
+                                <Grid  Grid.Row="0" Margin="5,0">
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="1.8*"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <RichTextBox x:Name="rtbReadData" Grid.Row="0" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Visible" Margin="5" IsReadOnly="True"/>
+                                    <Button x:Name="btnClearRtbReadData" Grid.Row="1" MaxHeight="30" Margin="5,0" Click="btnClearRtbReadData_Click" Background="White" Content="Очистить"/>
+                                    <Button x:Name="btnGetData" Grid.Row="1" Grid.Column="1" MaxHeight="30" Margin="5,0" Click="btnGetData_Click" Background="White" Content="Отображать"/>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Header="Отправка команд" Grid.Row="1">
+                                <Grid   Margin="5,0">
+                                    <Grid.RowDefinitions >
+                                        <RowDefinition Height="1.8*"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <RichTextBox x:Name="rtbWriteData" Grid.Row="0" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Visible" Margin="5"/>
+                                    <Button x:Name="btnClearRtbWriteData" Grid.Row="1" MaxHeight="30" Margin="5,0" Click="btnClearRtbWriteData_Click" Background="White" Content="Очистить" />
+                                    <Button x:Name="btnSendData" Grid.Row="1" Grid.Column="1" MaxHeight="30" Margin="5,0" Click="btnSendData_Click" Background="White" Content="Отправить"/>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+
+                    </GroupBox>
+
+
+                </Grid>
+
+
+
+
+
+                <!--<StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>Select your COM:</Label>
+                        <ComboBox x:Name="elementCBCOM" Height="30" Width="120"></ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>Select your baund rate:</Label>
+                        <TextBox x:Name="elementTBBaundRate" Height="30" Width="120"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="elementBTNConnect" Click="ElementBTNConnect_Click" >
+                            Подключиться</Button>
+                        -->
+                <!--<Button x:Name="ElementBTNDisconnect" Click="ElementBTNDisconnect_Click" >
+                            Отключиться</Button>-->
+                <!--
+                    </StackPanel>
+                </StackPanel>-->
+            </TabItem>
+
+            <TabItem Header="Помощь" ToolTip="Руководство по использованию программы">
+                <ScrollViewer>
+                    <Grid  >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition Height="auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+
+                        <GroupBox Grid.Row="0">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold">Описание вкладки "Настройка"</Label>
+                            </GroupBox.Header>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Resources/help1.png" Height="600"></Image>
+                                <TextBlock Grid.Row="1" TextWrapping="Wrap" FontSize="16" >Блок "1" представляет собой вкладки переключения между основным функционалом программного обеспечения.
+Для организации подключения к лабораторному стенду "Умное здание" необходимо выбрать параметры подключения к порту в блоке "2" и нажать на кнопку "Подключиться". Для отключения от COM-порта необходимо нажать на эту же кнопку.
+Кнопка "Сменить пользователя" расположенная в блоке "3" закрывает текущее окно и отображает окно входа в систему. Кнопка "Сохранить конфигурацию интерфейса", также расположенная в блоке "3" позволяет в файл записать данные о состоянии графических элементов программного обеспечения.
+Блок "4" и "5" представляют из себя консоль взаимодействия с COM-портом. Блок "4" отображает информацию, полученную из COM-порта и содержит кнопку "Очистить" и "Отобразить". Первая очищает поле отображения данных, а вторая запускает или останавливает вывод данных с COM-порта. Блок "5" содержит поле для ввода команд, отправляемых на COM-порт, кнопку "Очистить", очищающую поле ввода и - "Отправить", отправляющей введенную пользователем команду.
+                                </TextBlock>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Grid.Row="1">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold">Описание вкладки "Управление стендом"</Label>
+                            </GroupBox.Header>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Resources/help2.png" Height="600"></Image>
+                                <Image Source="Resources/sensor_description.png" Height="600" Grid.Row="1"></Image>
+                                <TextBlock Grid.Row="2" TextWrapping="Wrap" FontSize="16">Вкладка "Управление стендом" содержит необходимые графические элементы для сбора данных и управления лабораторным стендом "Умное здание"
+Блок "1" представляет собой вкладки переключения между основным функционалом программного обеспечения.
+Блок "2" представляет собой группу блоков, каждый из которых связан с определенной комнатой стенда "Умное здание". Каждый блок пронумерован и подписан по наименованию комнаты, а также содержит по две других группы блоков, а именно блок "Устройства" и "Датчики". Первый блок содержит графические элементы управления исполнительными устройствами стенда, а второй - отображения показаний с датчиков стенда. Для каждого блока комнат присутствует прокрутка содержимого, а также возможность изменения размера путем перемещения края блока зажатой ЛКМ. 
+Блок "4" представляет собой область уведомлений программного обеспечения. Для очистки данного поля необходимо двойным кликом нажать по данной области.
+Блок "3" представляет собой панель дополнительных элементов управления стендом. Данная панель может скрываться и раскрывается путем нажатия кнопки со стрелкой расположенной радом с данным блоком. Блок "3" включает такие группы блоков как: "Общее управление", "Сигнализация", "дата/время контроллера", "Опрос датчика", "Диапазоны датчиков", "Интерфейс". Блок "Общее управление" состоит из подблоков каждый из которых связан с определенной группой исполнительных устройств и подписан их названием. В каждом из таких подблоков присутствуют элемент управления значением исполнительного устройства кнопки "Включить" и "Выключить", которые выполняют одноименные действия. Блок "Сигнализация" содержит элементы управления для ее настройки, а также кнопки для включения и выключения. Блок "Дата/время контроллера" содержит элементы управления для установки даты и времени на котроллере Arduino. Блок "Опрос датчиков" пункт выбора циклического опроса датчиков. Если выбран пункт "Да", то датчики будут постоянно циклически опрашиваться с частотой заданной пользователем ниже в этом же блоке. Также в блоке "Опрос датчиков" содержится элемент управления для активации или деактивации записи действий пользователя и показаний датчиков в базу данных. В этом же блоке присутствует кнопка "Статистические графики" нажатие на которую открывает окно, в котором отображается статистика показаний датчиков в виде графиков. Блок "Диапазоны датчиков" позволяет задать диапазон значений для выбранной группы датчиков. Блок "Интерфейс" позволяет изменить расположение блоков комнат или же скрыть или отобразить нужные блоки.
+                                </TextBlock>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Grid.Row="2">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold">Описание вкладки "Данные системы"</Label>
+                            </GroupBox.Header>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Resources/help3.png" Height="600"></Image>
+                                <TextBlock Grid.Row="1" TextWrapping="Wrap" FontSize="16" >Вкладка "Данные системы" содержит элементы управления взаимодействия с базой данных.
+Блок "1" представляет собой вкладки переключения между основным функционалом программного обеспечения.
+Блок "2" представляет собой группу вкладок каждая из которых отвечает за отображение одноименной со вкладкой таблицы базы данных. 
+Блок "3" представляет собой таблицу, в которой отображаются данные из базы данных для выбранной вкладки.
+Блок "4" представляет собой группу элементов управления данными БД. Для вкладок "Статистика" и "Аудит действий" блок "4" содержит элементы, позволяющие задать правила выборки данных для соответствующих таблиц. Кнопка "Применить" позволяет отобразить данные в соответствии сформированной выборке. Для всех остальных вкладок блок "4" содержит поля для формирования данных выбранной таблицы, а также кнопки для добавления, изменения и удаления данных, каждая из которых выполняет одноименные действия с данными для выбранной таблицы.
+
+                                </TextBlock>
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Grid.Row="3">
+                            <GroupBox.Header>
+                                <Label FontWeight="Bold">Описание окна отображения статистических графиков</Label>
+                            </GroupBox.Header>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image Source="Resources/help4.png" Height="600"></Image>
+                                <TextBlock Grid.Row="1" TextWrapping="Wrap" FontSize="16" >Окно "Статистические графики датчиков" отображает статистику показаний датчиков в виде графиков.
+Блок "1" приставляет собой группу вкладок для выбора одноименной группы датчиков, для которых необходимо отобразить графики.
+Блок "2" представляет собой два блока. Первый блок отображает график реального времени для выбранного датчика, а второй - график за выбранный пользователем период для этого же датчика.
+Блок "3" содержит элементы управления параметрами отображения графиков и изменением вида интерфейса, за что отвечают советующие блоки. Подблок "График реального времени" позволяет выбрать вид или комнату датчика, число отображаемых в реальном времени точек и возможность включения или отключения графика реального времени путем нажатия кнопки "Запустить". Подблок "График за период" позволяет выбрать дату начала и окончания периода для отображения графика. Подблок "Интерфейс" содержит кнопку "Сменить вид" нажатие на которую меняет расположение графиков на горизонтальный или вертикальный вид.
+
+                                </TextBlock>
+                            </Grid>
+                        </GroupBox>
+
+                        <!--<StackPanel Margin="0" Orientation="Horizontal" MaxHeight="80">
+                        <Image Margin="2" Source="Resources/L_no.png"/>
+                        <Image Margin="2" Source="Resources/L_yes.png"/>
+                        <Image Margin="2" Source="Resources/L_rgb.png"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" MaxHeight="80">
+                        <Image Margin="2" Source="Resources/F_NO.png"/>
+                        <Image Margin="2" Source="Resources/F_c.png"/>
+                        <Image Margin="2" Source="Resources/F_h.png"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" MaxHeight="80">
+                        <Image Margin="2" Source="Resources/M_no.png"/>
+                        <Image Margin="2" Source="Resources/M_yes.png"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Orientation="Horizontal" MaxHeight="80">
+                        <Image Margin="2" Source="Resources/D_no.png"/>
+                        <Image Margin="2" Source="Resources/D_yes.png"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" Orientation="Horizontal" MaxHeight="80">
+                        <Image Margin="2" Source="Resources/V_no.png"/>
+                        <Image Margin="2" Source="Resources/V_yes.png"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="5" Orientation="Horizontal" MaxHeight="80">
+
+                    </StackPanel>
+
+
+                    <TextBlock Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"> - индикаторы освещения (выключен, включен, включен RGB соответственно)</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"> - индикаторы электроотопления (включено, подача холодного воздуха, подача теплого воздуха соответсвенно)</TextBlock>
+                    <TextBlock Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"> - индикатор обнаружения движения (отсутсвие и присутствие движения сответсвенно)</TextBlock>
+                    <TextBlock Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"> - индикатор открытия двери (дверь закрыта и открыта соответсвенно)</TextBlock>
+                    <TextBlock Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center"> - индикатор вибрации (отстутствие и наличие вибрации соответсвенно)</TextBlock>
+                    <TextBlock Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center">123</TextBlock>-->
+                        <!--<xctk:ButtonChrome Content="ddd" Grid.Row="6" Grid.Column="1"/>-->
+                        <!--<xctk:ButtonSpinner Content="eee" Grid.Row="6" Grid.Column="1"/>-->
+
+
+
+                    </Grid>
+
+                </ScrollViewer>
+            </TabItem>
+
+
+
+
+
+        </TabControl>
+
+
+    </Grid>
+</Window>

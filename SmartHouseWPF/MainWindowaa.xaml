@@ -1,0 +1,313 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Timers;
+using System.IO.Ports;
+using System.Windows.Media.Animation;
+using System.Threading;
+using System.Windows.Threading;
+
+namespace SmartHouseWPF
+{
+    /// <summary>
+    /// Логика взаимодействия для MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            Init();
+
+        
+
+        }
+
+        bool isConnected = false;
+        bool isGettable = false;
+        string[] serialPorts;
+        SerialPort serialPort;
+        FlowDocument mcFlowDoc = new FlowDocument();
+        Paragraph para = new Paragraph();
+        private delegate void UpdateUiTextDelegate(string data);
+
+
+        void Init()
+        {
+            serialPorts = SerialPort.GetPortNames();
+            string[] arrBaundRate = new string[] { "115200", "74880", "57600", "38400", "19200", "9600", "4800", "2400", "1200", "300" };
+            string[] arrParityBits = new string[] { "None", "Odd", "Even", "Mark", "Space" };
+            string[] arrDataBits = new string[] { "5", "6", "7", "8" };
+            string[] arrStopBits = new string[] { "1", "2", "1.5", "None" };
+            string[] arrFlowControl = new string[] { "None", "RTS", "RTS/X", "Xon/Xoff" };
+            Dictionary<ComboBox, string[]> listSettingParam  = new Dictionary<ComboBox, string[]> {
+                { cbPortName, serialPorts},
+                { cbBaundRate, arrBaundRate},
+                { cbParityBits, arrParityBits},
+                { cbDataBits, arrDataBits},
+                { cbStopBits, arrStopBits},
+                { cbFlowControl, arrFlowControl}
+            };
+            foreach (KeyValuePair<ComboBox, string[]> elList in listSettingParam)
+            {
+                GetSettingParam(elList.Value, elList.Key);
+            }
+        }
+       
+        void GetSettingParam(string[] arr, ComboBox obj)
+        {
+            foreach (string elArr in arr)
+            {
+                obj.Items.Add(elArr);
+
+                if (arr.Count() > 0 && arr[0] != null)
+                {
+                    obj.SelectedItem = arr[0];
+                }
+            }
+        }
+
+
+        //Установка соединения с Arduino через COM порт
+        private void ControlConnection()
+        {
+            if (!isConnected)
+            {
+                isConnected = true;
+                string selectedPort = cbPortName.SelectedItem.ToString();
+                int baundRate = Convert.ToInt32(cbBaundRate.Text);
+                var parityBits = (Parity)Enum.Parse(typeof(Parity), cbParityBits.SelectedIndex.ToString(), true);
+                var dataBits = Convert.ToInt32(cbDataBits.Text);
+                var stopBits = (StopBits)Enum.Parse(typeof(StopBits), (cbStopBits.SelectedIndex + 1).ToString(), true);
+                var handshake = (Handshake)Enum.Parse(typeof(Handshake), cbFlowControl.SelectedIndex.ToString(), true);
+                int readTimeout = 100;
+                int writeTimeout = 100;
+
+                serialPort = new SerialPort(selectedPort, baundRate, parityBits, dataBits, stopBits);
+                serialPort.Handshake = handshake;
+                serialPort.ReadTimeout = readTimeout;
+                serialPort.WriteTimeout = writeTimeout;
+                serialPort.Open();
+                btnSetConnection.Content = "Отключиться";
+                serialPort.ErrorReceived += SerialPort_ErrorReceived;
+                serialPort.DataReceived += new SerialDataReceivedEventHandler(serialPort_DataReceived);
+                //ElementsControlEnable();
+            }
+            else if (isConnected)
+            {
+                serialPort.DataReceived -= new SerialDataReceivedEventHandler(serialPort_DataReceived);
+                isConnected = false;
+                //serialPort.Dispose();
+                //serialPort.DiscardOutBuffer();
+                //serialPort.DiscardInBuffer();
+              
+                serialPort.Close();
+             
+
+
+                btnSetConnection.Content = "Подключиться";
+                //ElementsControlDisable();
+                //resetDefaults();
+            }
+           
+        }
+
+        private void SerialPort_ErrorReceived(object sender, SerialErrorReceivedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+        //Анимация шторки настроек и данных
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //if (tab_control.SelectedIndex == 0)
+            //    if (panel_options.ActualWidth != 0)
+            //    {
+            //        DoubleAnimation panel_anim = new DoubleAnimation();
+            //        panel_anim.From = panel_options.ActualWidth;
+            //        panel_anim.To = 0;
+            //        panel_anim.Duration = TimeSpan.FromSeconds(0.3);
+            //        panel_options.BeginAnimation(StackPanel.WidthProperty, panel_anim);
+            //        MatrixTransform mir = new MatrixTransform(1, 0, 0, -1, 0, arrow_img.Width);
+            //        arrow_img.RenderTransform = mir;
+
+            //    }
+            //    else
+            //    {
+            //        DoubleAnimation panel_anim = new DoubleAnimation();
+            //        panel_anim.From = panel_options.ActualWidth;
+            //        panel_anim.To = 100;
+            //        panel_anim.Duration = TimeSpan.FromSeconds(0.3);
+            //        panel_options.BeginAnimation(StackPanel.WidthProperty, panel_anim);
+            //        MatrixTransform mir = new MatrixTransform(-1, 0, 0, 1, arrow_img.Width, 0);
+            //        arrow_img.RenderTransform = mir;
+
+            //    }
+            if (elementTIAppControl.IsSelected)
+                if (panel_options_fr.ActualWidth != 0)
+                {
+                    DoubleAnimation panel_anim = new DoubleAnimation();
+                    panel_anim.From = panel_options_fr.ActualWidth;
+                    panel_anim.To = 0;
+                    panel_anim.Duration = TimeSpan.FromSeconds(0.3);
+                    panel_options_fr.BeginAnimation(StackPanel.WidthProperty, panel_anim);
+                    MatrixTransform mir = new MatrixTransform(-1, 0, 0, 1, arrow_img_fr.Width, 0);
+                    arrow_img_fr.RenderTransform = mir;
+                   
+                }
+                else
+                {
+                    DoubleAnimation panel_anim = new DoubleAnimation();
+                    panel_anim.From = panel_options_fr.ActualWidth;
+                    panel_anim.To = 200;
+                    panel_anim.Duration = TimeSpan.FromSeconds(0.3);
+                    panel_options_fr.BeginAnimation(StackPanel.WidthProperty, panel_anim);
+                    MatrixTransform mir = new MatrixTransform(1, 0, 0, -1, 0, arrow_img_fr.Width);
+                    arrow_img_fr.RenderTransform = mir;
+                }
+        }
+
+        private void btnSetConnection_Click(object sender, RoutedEventArgs e)
+        {
+            ControlConnection();
+            
+
+        }
+
+        //обработка при событии ошибки считывания данных
+        private void Port_ErrorReceived(object sender, SerialErrorReceivedEventArgs e)
+        {
+            if (e.EventType == SerialError.TXFull)
+                this.serialPort.DiscardOutBuffer();
+            else
+                this.serialPort.DiscardInBuffer();
+        }
+        public void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            try
+            {
+
+                Thread.Sleep(500);
+                string  bt = serialPort.ReadExisting();
+
+                string serialPortData = serialPort.ReadExisting();
+                Dispatcher.BeginInvoke( new UpdateUiTextDelegate(LineReceived), serialPortData);
+
+            }
+            catch { } 
+            //(Exception ex)
+            //{
+                
+            //   MessageBox.Show(ex.Message, "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
+            //}
+        }
+        private void LineReceived(string data)
+        {
+            if (isGettable)
+            {
+                para.Inlines.Add(data);
+                mcFlowDoc.Blocks.Add(para);
+                rtbReadData.Document = mcFlowDoc;
+                rtbReadData.ScrollToEnd();
+            }
+           
+            //tbMessage.Text += data.Trim() + "\r\n";*/
+
+        }
+
+
+        private void ElementBTNDisconnect_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void elementCBCOM_MouseEnter(object sender, MouseEventArgs e)
+        {
+          //  string tmp = elementCBCOM.Text;
+          ////  GetAllComPorts();
+          //  elementCBCOM.Text = tmp;
+        }
+
+        private void btnGetData_Click(object sender, RoutedEventArgs e)
+        {
+            if (isGettable)
+            {
+                isGettable = false;
+                btnGetData.Content = "Отображать";
+            }
+            else if (!isGettable)
+            {
+                isGettable = true;
+                mcFlowDoc.Blocks.Clear();
+                para.Inlines.Clear();
+                btnGetData.Content = "Прекратить отображение";
+            }
+        }
+
+        private void btnClearRtbReadData_Click(object sender, RoutedEventArgs e)
+        {
+            mcFlowDoc.Blocks.Clear();
+            para.Inlines.Clear();
+            ClearRtbReadWrite();
+        }
+        private void btnClearRtbWriteData_Click(object sender, RoutedEventArgs e)
+        {
+            ClearRtbReadWrite("write");
+        }
+        // "read" -очистить поле для чтения сообщений, "write" - очисить поле для отправки сообщений
+        void ClearRtbReadWrite(string typeRtb = "read")
+        {
+            if (typeRtb == "read")
+                rtbReadData.Document.Blocks.Clear();
+            else if (typeRtb == "write")
+                rtbWriteData.Document.Blocks.Clear();
+        }
+
+        private void btnSendData_Click(object sender, RoutedEventArgs e)
+        {
+            if (rtbWriteData.Selection.Text != "")
+            {
+               // MessageBox.Show(rtbWriteData.Selection.Text);
+                serialPort.Write(rtbWriteData.Selection.Text);
+            }
+            else
+            {
+                TextRange txtRange = new TextRange(rtbWriteData.Document.ContentStart, rtbWriteData.Document.ContentEnd);
+               // MessageBox.Show(txtRange.Text);
+                serialPort.Write(txtRange.Text);
+            }
+        }
+
+        //private void btnClearRtbReadWriteData_Click(object sender, RoutedEventArgs e)
+        //{
+        //   MessageBox.Show(sender. + "");
+        //    rtbReadData.Document.Blocks.Clear();
+        //    rtbWriteData.Document.Blocks.Clear();
+        //}
+
+
+
+
+        //private void tbReadComand_GotFocus(object sender, RoutedEventArgs e)
+        //{
+        //    serialPort_DataReceived(sender, null);
+        //}
+
+
+
+    }
+}

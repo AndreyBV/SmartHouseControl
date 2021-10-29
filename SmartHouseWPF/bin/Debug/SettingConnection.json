@@ -1,0 +1,2 @@
+{ "ConnectionStrings": { "DefaultConnection": 
+                "Host=localhost;Port=5432;Database=smart_house;Username=postgres;Password=22" } }

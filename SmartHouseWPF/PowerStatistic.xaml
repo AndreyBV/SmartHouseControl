@@ -1,0 +1,162 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartHouseWPF"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Name="WindowPowerStatistic" x:Class="SmartHouseWPF.PowerStatistic"
+        mc:Ignorable="d"
+        Title="Статистические графики датчиков" Height="501" Width="891.5" WindowStartupLocation="CenterScreen" SizeChanged="Window_SizeChanged" Closed="WindowPowerStatistic_Closed" MinWidth="750" MinHeight="450">
+    <Grid x:Name="grdBase">
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+        <TabControl x:Name="tcTypeSensor" Grid.Column="0" Grid.ColumnSpan="2" SelectionChanged="tcTypeSensor_SelectionChanged">
+            <TabItem Tag="C" Header="Электроэнергия" x:Name="tiCurrent">
+                <!--<TabControl>
+                    <TabItem Tag="1" Header="Ток - "></TabItem>
+                    <TabItem Tag="2" Header="Ток - "></TabItem>
+                    <TabItem Tag="3" Header="Ток - "></TabItem>
+                    <TabItem Tag="4" Header="Ток - "></TabItem>
+                </TabControl>-->
+            </TabItem>
+            <TabItem Tag="T" Header="Температура"></TabItem>
+            <TabItem Tag="H" Header="Влажность"></TabItem>
+            <TabItem Tag="P" Header="Атмосферное давление" ></TabItem>
+            <TabItem Tag="L" Header="Освещенность" ></TabItem>
+            <TabItem Tag="W" Header="Протечка воды" ></TabItem>
+            <TabItem Tag="G" Header="Газ" ></TabItem>
+        </TabControl>
+
+
+        <GroupBox x:Name="grpChartNow"  Grid.Column="0" Grid.Row="1">
+            <GroupBox.Header>
+                <Label x:Name="lblChartNow" FontWeight="Bold" Content="Текущий расход электроэнергии" />
+            </GroupBox.Header>
+            <Grid x:Name="grdChartNow"/>
+        </GroupBox>
+        <GroupBox x:Name="grpChartPeriod" Grid.Column="1" Grid.Row="1">
+            <GroupBox.Header>
+                <Label x:Name="lblChartPeriod" FontWeight="Bold" Content="Расход электроэнергии за период" />
+            </GroupBox.Header>
+            <Grid x:Name="grdChartPeriod"/>
+        </GroupBox>
+
+        <Button x:Name="btnArrowSettingPanel" Grid.Column="2" Grid.RowSpan="3" Background="#FF6A8BA6" Click="btnArrowSettingPanel_Click" >
+            <Image x:Name="arrow_img_fr" Source="Resources\Arrow2.png" Width="20" />
+        </Button>
+
+
+        <GroupBox Grid.Column="3" Grid.RowSpan="3" x:Name="gbSettingChart">
+            <GroupBox.Header>
+                <Label FontWeight="Bold" Content="Параметры" />
+            </GroupBox.Header>
+            <Grid x:Name="grdSettingPanel">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Grid.Row="0">
+                    <GroupBox.Header>
+                        <Label FontWeight="Bold"  Content="График реального времени" />
+                    </GroupBox.Header>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Label x:Name="lbNameType" Grid.Row="0" Content="Комната:"/>
+
+                        <ComboBox x:Name="cbxNameCurrent" Grid.Row="1" SelectedIndex="0" SelectionChanged="cbxType_SelectionChanged">
+                            <ComboBoxItem Uid="1">INA219, 3.2A</ComboBoxItem>
+                            <ComboBoxItem Uid="2">MAX471, 3A</ComboBoxItem>
+                            <ComboBoxItem Uid="3">ACS712, 5A</ComboBoxItem>
+                            <ComboBoxItem Uid="4">ACS712, 20A</ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox x:Name="cbxNameRoom" Grid.Row="1" SelectedIndex="0" Visibility="Collapsed" SelectionChanged="cbxType_SelectionChanged">
+                            <ComboBoxItem Uid="1">Гостиная</ComboBoxItem>
+                            <ComboBoxItem Uid="2">Кухня</ComboBoxItem>
+                            <ComboBoxItem Uid="3">Ванная</ComboBoxItem>
+                            <ComboBoxItem Uid="4">Спальня</ComboBoxItem>
+                            <ComboBoxItem Uid="5">Мансарда - справа</ComboBoxItem>
+                            <ComboBoxItem Uid="6">Мансарда - слева</ComboBoxItem>
+                        </ComboBox>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" x:Name="spCurrontPower" Visibility="Collapsed">
+                            <RadioButton x:Name="rbCurrent" Margin="0,5,5,5" IsChecked="True" Checked="rbCurrentPower_Checked" >Ток</RadioButton>
+                            <RadioButton x:Name="rbPower" Margin="5" Checked="rbCurrentPower_Checked">Мощность</RadioButton>
+                        </StackPanel>
+                        <TextBlock x:Name="tbVoltage" Visibility="Collapsed" Grid.Row="3">Напряжение [В]:</TextBlock>
+                        <xctk:DoubleUpDown x:Name="DUpDownVoltage" Visibility="Collapsed" Grid.Row="4" Height="22"  Minimum="0" Maximum="50" Value="5" ToolTip="Min: 5, Max: 200" ValueChanged="PointUpDown_ValueChanged"/>
+                        <TextBlock Grid.Row="5">Число отображаемых точек:</TextBlock>
+                        <xctk:IntegerUpDown x:Name="PointUpDown" Grid.Row="6" Height="22"  Minimum="5" Maximum="200" Value="20" ToolTip="Min: 5, Max: 200" ValueChanged="PointUpDown_ValueChanged"/>
+                        <Button x:Name="btnOnOffRTChart" Grid.Row="7" Visibility="Visible" Content="Запустить" Margin="0,5" Background="White" Click="btnOnOffRTChart_Click"/>
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Grid.Row="1" x:Name="gbParamPerion">
+                    <GroupBox.Header>
+                        <Label  FontWeight="Bold"  Content="График за период" />
+                    </GroupBox.Header>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Content="Начало периода:"/>
+                        <Label Grid.Row="2" Content="Конец периода:"/>
+                        <xctk:DateTimePicker x:Name="dtpTimeStart" Grid.Row="1" ValueChanged="dateTimePicerDB_ValueChanged"  Format="Custom" FormatString="G" TextAlignment="Left" Kind="Utc"/>
+                        <xctk:DateTimePicker x:Name="dtpTimeEnd" Grid.Row="3"  ValueChanged="dateTimePicerDB_ValueChanged"  Format="Custom" FormatString="G" TextAlignment="Left" Kind="Utc"/>
+                        <Button x:Name="btnShowChart" Grid.Row="5" Content="Отобразить" Margin="0,5" Click="btnShowChart_Click" Background="White"/>
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Grid.Row="2" x:Name="gbChangeUI">
+                    <GroupBox.Header>
+                        <Label FontWeight="Bold"  Content="Интерфейс" />
+                    </GroupBox.Header>
+                    <Grid>
+                        <Button x:Name="btnChangeView" Grid.Row="8" Content="Сменить вид" Margin="0,5" Click="btnChangeView_Click" Background="White"/>
+                    </Grid>
+                </GroupBox>
+
+
+
+                <!--<xctk:DateTimePickerBase Grid.Row="1" />-->
+                <!--<DatePicker Grid.Row="1"/>
+                <DatePicker Grid.Row="3"/>-->
+
+
+
+
+
+
+
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+</Window>

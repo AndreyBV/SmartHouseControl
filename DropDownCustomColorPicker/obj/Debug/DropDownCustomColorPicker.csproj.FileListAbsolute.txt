@@ -1,0 +1,75 @@
+f:\WPFColorPicker\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.dll
+f:\WPFColorPicker\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.pdb
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csprojResolveAssemblyReference.cache
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.cs
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.g.cs
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.cache
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.lref
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.baml
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.baml
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.resources
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.Properties.Resources.resources
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csproj.GenerateResource.Cache
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.dll
+f:\WPFColorPicker\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.pdb
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.pdb
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csprojResolveAssemblyReference.cache
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.cs
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.g.cs
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.cache
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.lref
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.baml
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.baml
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.resources
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.Properties.Resources.resources
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csproj.GenerateResource.Cache
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.pdb
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\ZedGraph.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\ZedGraph.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\de\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\es\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\fr\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\hu\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\it\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\ja\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\pt\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\ru\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\sk\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\sv\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\tr\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\zh-cn\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\DropDownCustomColorPicker\bin\Debug\zh-tw\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\CustomColorPicker.pdb
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\ZedGraph.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\ZedGraph.xml
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\de\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\es\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\fr\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\hu\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\it\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\ja\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\pt\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\ru\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\sk\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\sv\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\tr\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\zh-cn\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\bin\Debug\zh-tw\ZedGraph.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csprojResolveAssemblyReference.cache
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.cs
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.g.cs
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.cache
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorPicker_MarkupCompile.lref
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.baml
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorSelector.baml
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.g.resources
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.Properties.Resources.resources
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\DropDownCustomColorPicker.csproj.GenerateResource.Cache
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.dll
+F:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\DropDownCustomColorPicker\obj\Debug\CustomColorPicker.pdb

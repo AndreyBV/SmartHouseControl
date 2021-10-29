@@ -1,0 +1,66 @@
+﻿<Window x:Class="SmartHouseWPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartHouseWPF"
+        mc:Ignorable="d"
+        Title="Вход в систему" Height="215" Width="273.941" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="20,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="2" Grid.Row="0" x:Name="grdFieldDataUser">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">ФИО:</Label>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5" x:Name="tbLogin"></TextBox>
+
+
+
+            <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" >Пароль:</Label>
+            <!--<TextBox Grid.Row="1" Grid.Column="1" Margin="0,5"  x:Name="tbPassword"></TextBox>-->
+            <PasswordBox Grid.Row="1" Grid.Column="1" Margin="0,5"  x:Name="tbPassword"></PasswordBox>
+
+            <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Center">Группа:</Label>
+            <!--<TextBox Grid.Row="1" Grid.Column="1" Margin="0,5"></TextBox>-->
+            <ComboBox x:Name="cbxUserGroup" Grid.Row="2" Grid.Column="1" Margin="0,5" ></ComboBox>
+
+            <Button Grid.Row="3" Grid.ColumnSpan="2" Margin="0,5" Background="White" x:Name="btnRegistration" Click="btnRegistration_Click">Зарегистрироваться</Button>
+        </Grid>
+     
+        <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="0,5" Background="White" x:Name="btnLogin" Click="btnLogin_Click" >Войти</Button>
+        <!--<StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label>ФИО:</Label>
+            <TextBox></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Label>Группа:</Label>
+            <TextBox></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Label>Пароль:</Label>
+            <TextBox></TextBox>
+        </StackPanel>-->
+
+
+
+
+
+    </Grid>
+</Window>

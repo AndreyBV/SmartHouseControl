@@ -1,0 +1,596 @@
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\bin\Debug\SmartHouseWPF.pdb
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF.csprojResolveAssemblyReference.cache
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\MainWindow.g.cs
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\App.g.cs
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.cache
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.lref
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\MainWindow.baml
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF.g.resources
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF.Properties.Resources.resources
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.GenerateResource.Cache
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+F:\Files\University\8 семестр\$DIPLOM\Project - Smart House\SmartHouseWPF\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\SmartHouseWPF.pdb
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF.csprojResolveAssemblyReference.cache
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\MainWindow.g.cs
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\App.g.cs
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.cache
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.lref
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\MainWindow.baml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF.g.resources
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF.Properties.Resources.resources
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.GenerateResource.Cache
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Npgsql.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Buffers.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Memory.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.ValueTuple.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Npgsql.pdb
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Npgsql.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Buffers.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Memory.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\System.ValueTuple.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\PowerStatistic.g.cs
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\PowerStatistic.baml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\ZedGraph.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\ZedGraph.xml
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\de\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\es\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\fr\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\hu\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\it\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\ja\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\pt\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\ru\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\sk\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\sv\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\tr\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\zh-cn\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\zh-tw\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\CustomColorPicker.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\CustomColorPicker.pdb
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.SmartHouseWPF.exe.config
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.dll
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.pdb
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\LiveCharts.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\LiveCharts.pdb
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\LiveCharts.xml
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.pdb
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.xml
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\WPFButton.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\GongSolutions.WPF.DragDrop.dll
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\GongSolutions.WPF.DragDrop.pdb
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\GongSolutions.WPF.DragDrop.xml
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.xml
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\LoginWindow.g.cs
+F:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res\SmartHouseWPF\obj\Debug\LoginWindow.baml
+f:\SmartHouseWPF-res-original\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+f:\SmartHouseWPF-res-original\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+f:\SmartHouseWPF-res-original\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+f:\Files\University\8 семестр\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\SmartHouseWPF.pdb
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\CustomColorPicker.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\LiveCharts.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Npgsql.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Remotion.Linq.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Buffers.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Collections.Immutable.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Interactive.Async.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Memory.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.ValueTuple.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\WPFButton.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\ZedGraph.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\CustomColorPicker.pdb
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.pdb
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\LiveCharts.pdb
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\LiveCharts.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.pdb
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Npgsql.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Remotion.Linq.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Buffers.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Collections.Immutable.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Interactive.Async.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Memory.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\System.ValueTuple.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\ZedGraph.xml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\de\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\es\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\fr\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\hu\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\it\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\ja\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\pt\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\ru\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\sk\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\sv\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\tr\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\zh-cn\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\bin\Debug\zh-tw\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.csprojResolveAssemblyReference.cache
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.SmartHouseWPF.exe.config
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\LoginWindow.g.cs
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\MainWindow.g.cs
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\PowerStatistic.g.cs
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\App.g.cs
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.cache
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.lref
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\LoginWindow.baml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\MainWindow.baml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\PowerStatistic.baml
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.g.resources
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.Properties.Resources.resources
+f:\$DIPLOM\SmartHouseWPF-res-yes-paket\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.GenerateResource.Cache
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF.csprojResolveAssemblyReference.cache
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.SmartHouseWPF.exe.config
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\LoginWindow.g.cs
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\MainWindow.g.cs
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\PowerStatistic.g.cs
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\App.g.cs
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.cache
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.lref
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\SmartHouseWPF.pdb
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\CustomColorPicker.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\LiveCharts.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Npgsql.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Remotion.Linq.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Buffers.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Collections.Immutable.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Interactive.Async.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Memory.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.ValueTuple.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\WPFButton.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\ZedGraph.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\CustomColorPicker.pdb
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.pdb
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\LiveCharts.pdb
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\LiveCharts.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.pdb
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Npgsql.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Remotion.Linq.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Buffers.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Collections.Immutable.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Interactive.Async.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Memory.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\System.ValueTuple.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\ZedGraph.xml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\de\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\es\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\fr\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\hu\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\it\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\ja\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\pt\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\ru\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\sk\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\sv\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\tr\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\zh-cn\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\bin\Debug\zh-tw\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\LoginWindow.baml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\MainWindow.baml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\PowerStatistic.baml
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF.g.resources
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF.Properties.Resources.resources
+f:\$DIPLOM\SmartHouseWPF-last — копия\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.GenerateResource.Cache
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.csprojResolveAssemblyReference.cache
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.SmartHouseWPF.exe.config
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\LoginWindow.g.cs
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\MainWindow.g.cs
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\PowerStatistic.g.cs
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\App.g.cs
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.cache
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.lref
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\SmartHouseWPF.pdb
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\CustomColorPicker.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Remotion.Linq.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Buffers.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Collections.Immutable.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Interactive.Async.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Memory.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.ValueTuple.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\WPFButton.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ZedGraph.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\CustomColorPicker.pdb
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.pdb
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.pdb
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.pdb
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Remotion.Linq.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Buffers.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Collections.Immutable.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Interactive.Async.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Memory.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.ValueTuple.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ZedGraph.xml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\de\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\es\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\fr\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\hu\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\it\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ja\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\pt\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ru\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\sk\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\sv\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\tr\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\zh-cn\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\zh-tw\ZedGraph.resources.dll
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\LoginWindow.baml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\MainWindow.baml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\PowerStatistic.baml
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.g.resources
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.Properties.Resources.resources
+f:\$DIPLOM\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.GenerateResource.Cache
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe.config
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.exe
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.pdb
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\SmartHouseWPF.exe
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\SmartHouseWPF.pdb
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\CustomColorPicker.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Remotion.Linq.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Buffers.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Collections.Immutable.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Interactive.Async.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Memory.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.ValueTuple.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\WPFButton.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Xceed.Wpf.Toolkit.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ZedGraph.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\CustomColorPicker.pdb
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\WindowsFormsZedGraph.pdb
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.pdb
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.pdb
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\LiveCharts.Wpf.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.EntityFrameworkCore.Relational.Design.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Options.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Primitives.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Npgsql.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Remotion.Linq.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Buffers.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Collections.Immutable.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Interactive.Async.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Memory.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Text.Encodings.Web.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\System.ValueTuple.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ZedGraph.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\de\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\es\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\fr\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\hu\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\it\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ja\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\pt\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\ru\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\sk\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\sv\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\tr\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\zh-cn\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\zh-tw\ZedGraph.resources.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.csprojResolveAssemblyReference.cache
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.SmartHouseWPF.exe.config
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\LoginWindow.g.cs
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\MainWindow.g.cs
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\PowerStatistic.g.cs
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\App.g.cs
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.cache
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF_MarkupCompile.lref
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\LoginWindow.baml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\MainWindow.baml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\PowerStatistic.baml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.g.resources
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.Properties.Resources.resources
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\obj\Debug\SmartHouseWPF.csproj.GenerateResource.Cache
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Newtonsoft.Json.dll
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+f:\Files\University\8 семестр\$DIPLOM\$ИТОГ\SmartHouseWPF-090619\SmartHouseWPF\bin\Debug\Newtonsoft.Json.xml
